@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pro Tutor | Create Account</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/login.css">
+    <link href="https://fonts.cdnfonts.com/css/amsterdam-2" rel="stylesheet">
+
+    <!-- MY STYLES -->
+    <link rel="stylesheet" href="./Assets/css/my-css/login-custom-bg.css">
+
+    <!-- BOOTSTRAP CSS/JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column justify-content-between custom-bg">
+
+    <header>
+        <div id="header">
+            <div class="container  px-3 px-lg-0">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="navbar-brand d-block d-lg-none" href="#">
+                        <a href="#">
+                            <h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png" width="100px"
+                                    alt="Brand Logo"></h2>
+                        </a>
+                    </div>
+                    <button class="navbar-toggler navbar_toggle" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="pages.html">Pages</a>
+                            </li> -->
+                        </ul>
+                        <div class="navbar-brand d-none d-lg-block" href="./index.html">
+                            <a href="#">
+                                <h2 class="logo center-logo"><img src="./assets/img/logo-removebg-preview.png"
+                                        width="100px" alt="Brand Logo"></h2>
+                            </a>
+                        </div>
+                        <ul class="navbar-nav navbar-nav-bottom">
+                            <li class="nav-item d-flex align-items-center">
+                                <a class="nav-link" href="./index.html">Login</a>
+                            </li>
+                            <li class="nav-item nav-item-btn">
+                                <a class="nav-link custom-btn-white p-2" href="./registration.html"> Create Account </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center py-5">
+        <div class="row bg-light custom-border-page-3">
+            <div class="col-md-12" style="width: 600px;">
+                <!-- THIS IS THE HEAD -->
+                <div class="row">
+                    <div class="col-md-12 text-danger bg-white custom-border-page-3 py-2">
+                        <div class="row">
+                            <div class="col-md-2 d-flex justify-content-center">
+                                <button class="custom-border-page-3 px-3 border-secondary">Back</button>
+                            </div>
+                            <div class="col-md-8 d-flex justify-content-center">
+                                <h4 class="fw-bold text-secondary">Create Account</h4>
+                            </div>
+                            <div class="col-md-2 d-flex justify-content-center">
+                                <button class="custom-border-page-3 px-3 border-secondary bg-dark text-white">Signin</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- THIS IS THE BODY -->
+                <div class="row py-3">
+                    <div class="col-md-12">
+                        
+                        <div class="container">
+                            <div class="row mb-3">
+                                <div class="col bg-white text-secondary rounded-pill p-1">
+                                    <img src="./Assets/img/teacher-module.png" alt="">
+                                    Teacher
+                                </div>
+                                <div class="col custom-gray-100">
+                        
+                                </div>
+                                <div class="col bg-white text-secondary rounded-pill p-1">
+                                    <img src="./Assets/img/student-module.png" alt="">
+                                   Student
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <div class="col">
+                                <label for="fname" class="form-label text-secondary">First Name</label>
+                                <input type="text" class="form-control rounded-pill" id="fname" aria-describedby="fname">
+                            </div>
+                            <div class="col">
+                                <label for="lname" class="form-label text-secondary">Last Name</label>
+                                <input type="text" class="form-control rounded-pill" id="lname" aria-describedby="lname">
+                            </div>
+                        </div>
+                        <!-- <div class="mb-3">
+                            <label for="username" class="form-label text-secondary">Username</label>
+                            <small class="text-muted">150 characters or fewer. Letters, digits, and @.+-_ only</small>
+                            <input type="text" class="form-control rounded-pill" id="username" aria-describedby="username">
+                        </div> -->
+                        <div class="mb-3">
+                            <label for="username" class="form-label text-secondary mb-2">Username</label>
+                            <!-- <small class="text-muted">150 characters or fewer. Letters, digits, and @.+-_ only</small> -->
+                            <input type="text" class="form-control rounded-pill" id="username" aria-describedby="username">
+                        </div>
+                            
+            
+                        <div class="mb-3">
+                            <label for="emailAdd" class="form-label text-secondary">Email Address</label>
+                            <input type="email" class="form-control rounded-pill" id="emailAdd" aria-describedby="emailAdd">
+                        </div>
+            
+                        <div class="mb-3">
+                            <label for="language" class="form-label text-secondary">Preferred Language</label>
+                            <select class="form-select rounded-pill" aria-label="Default select example">
+                                <option selected class="text-secondary">English</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                            
+            
+                        <div class="mb-3 row">
+                            <div class="col">
+                                <label for="pass" class="form-label text-secondary">Password</label>
+                                <input type="password" class="form-control rounded-pill" id="pass" aria-describedby="pass">
+                            </div>
+                            <div class="col">
+                                <label for="repass" class="form-label text-secondary">Re-enter Password</label>
+                                <input type="password" class="form-control rounded-pill" id="repass" aria-describedby="repass">
+                            </div>
+                        </div>
+            
+                        <div class="container d-flex justify-content-center">
+                            <form class="text-center"> 
+                                <!-- Apply text-center class to center the content -->
+                                <!-- ... (previous form elements) ... -->
+                                <button type="submit" class="btn btn-primary custom-bg border-0">Create Account</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2022 All Rights Reserved. Talent Pro Tutor</p>
+        </div>
+    </footer>
+</body>

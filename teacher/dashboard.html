@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Talent Pro Academy</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous" />
+
+    <!-- Components -->
+    <link rel="stylesheet" href="../components/header/header.css" />
+    <link rel="stylesheet" href="../components/course/course.css" />
+    <link rel="stylesheet" href="../components/infobar/infobar.css" />
+    <link rel="stylesheet" href="../components/searchbar/searchbar.css" />
+    <link rel="stylesheet" href="../components/progress/progress.css" />
+    <link rel="stylesheet" href="../components/classes/upcoming/upcoming.css" />
+    <link rel="stylesheet" href="../components/calendar/calendar.css" />
+
+    <!-- Base -->
+    <link rel="stylesheet" href="../Assets/css/style.css" />
+    <link rel="stylesheet" href="../Assets/css/utilities.css" />
+
+    <!-- Page -->
+    <link rel="stylesheet" href="../Assets/css/teacher/dashboard.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+
+    <!-- Google Font Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Chart JS library -->
+    <script src="../plugins/chart.min.js" defer></script>
+
+    <!-- Icons library -->
+    <script src="../plugins/feather.min.js" defer></script>
+
+    <!-- Components Scripts -->
+    <script src="../components/calendar/calendar.js" defer></script>
+    <script src="../components/progress/progress.js" defer></script>
+    <script src="../components/header/header.js" defer></script>
+  </head>
+
+  <body class="">
+    <div class="flex__desktop align-items-start">
+      <!-- Header -->
+      <header
+        class="header w-100 flex-row-reverse align-items-center justify-content-between position-sticky"
+        data-target="header">
+        <div class="header__logo">
+          <a href="./dashboard.html" title="Home">
+            <img
+              src="../Assets/img/logo-removebg-preview.png"
+              alt="Site Logo"
+              width="100" />
+          </a>
+        </div>
+        <nav class="d-block position-static">
+          <button
+            class="navbar__hamburger bg-white rounded-circle border-0"
+            data-target="headerHamburger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="27.967"
+              height="19.515"
+              viewBox="0 0 27.967 19.515">
+              <path
+                id="hamburger"
+                d="M1374.485,69.048a1.768,1.768,0,0,1,0-3.536h24.471a1.768,1.768,0,0,1,0,3.536Zm0-7.988a1.769,1.769,0,0,1,0-3.537h24.471a1.769,1.769,0,0,1,0,3.537Zm0-7.989a1.769,1.769,0,0,1,0-3.537h24.471a1.769,1.769,0,0,1,0,3.537Z"
+                transform="translate(-1372.738 -49.533)"
+                fill="#9f4bf8" />
+            </svg>
+            <span class="sr-only"></span>
+          </button>
+          <div class="navbar__content w-100">
+            <div class="navbar__content-inner">
+              <div class="navbar__infobar">
+                <div class="d-flex flex-column align-items-center">
+                  <img
+                    class="navbar__infobar-avatar"
+                    src="../Assets/img/profile.png"
+                    alt="User profile" />
+                  <h2 class="weight--black mt-3">Natisha Wolf</h2>
+                  <p class="mt-1 weight--medium">Teacher</p>
+                </div>
+                <div class="d-flex justify-content-between w-100 mt-4 mb-5">
+                  <div
+                    class="navbar__infobar-course rounded-3 text-center py-2 px-4">
+                    <h3 class="text-white fw-bold mb-1">19</h3>
+                    <p>Courses Created</p>
+                  </div>
+                  <div
+                    class="navbar__infobar-course rounded-3 text-center py-2 px-4">
+                    <h3 class="text-white fw-bold mb-1">28</h3>
+                    <p>Completed Courses</p>
+                  </div>
+                </div>
+              </div>
+              <div class="navbar__block">
+                <h3 class="navbar__heading fs-5 mb-4">Menu</h3>
+                <ul class="navlist">
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="dashboard.html"
+                      aria-current="page">
+                      <i class="icon fa fa-th-large" aria-hidden="true"></i
+                      >Dashboard
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="course.html">
+                      <i class="icon fa fa-file-text" aria-hidden="true"></i
+                      >Course
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="grading.html">
+                      <i
+                        class="icon fa fa-graduation-cap"
+                        aria-hidden="true"></i
+                      >Grading
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="calendar.html">
+                      <i class="icon fa fa-calendar" aria-hidden="true"></i
+                      >Calendar
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="messages.html">
+                      <i class="icon fa fa-comment" aria-hidden="true"></i
+                      >Message
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="payroll.html">
+                      <i class="icon fa fa-dollar" aria-hidden="true"></i
+                      >Payroll
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="privateClasses.html">
+                      <i class="icon fa fa-user" aria-hidden="true"></i>Private
+                      Classes
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="help.html">
+                      <i class="icon fa fa-question" aria-hidden="true"></i>Help
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar__block">
+                <h3 class="navbar__heading fs-5 mb-4">Account</h3>
+                <ul class="navlist">
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="settings.html">
+                      <i
+                        class="icon setting fa fa-wrench"
+                        aria-hidden="true"></i
+                      >Settings
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- End of Header -->
+      <main class="d-flex w-100 column-reverse">
+        <div class="w-100 p-relative bg__main--gray">
+          <!-- Searchbar -->
+          <nav class="searchbar ps-5 pe-3">
+            <div class="w-100 py-4 d-flex justify-content-between ps-4 pe-3">
+              <div>
+                <div class="p-relative">
+                  <input
+                    class="search__input rounded-5 px-4 bg-white"
+                    type="text"
+                    placeholder="Search"
+                    required />
+                  <i data-feather="search" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="me-3 p-relative">
+                  <button
+                    class="search__button rounded-5 d-flex justify-content-center align-items-center bg-white border-0"
+                    type="button">
+                    <span class="sr-only">To messages</span>
+                    <span class="active search__icon" aria-hidden="true">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                        fill="#545454">
+                        <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                          d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul
+                    class="search__dropdown rounded position-absolute bg-white">
+                    <li>
+                      <a href="##">
+                        <div class="notification-dropdown-icon info">
+                          <i data-feather="check"></i>
+                        </div>
+                        <div class="notification-dropdown-text">
+                          <span class="notification-dropdown__title"
+                            >System just updated</span
+                          >
+                          <span class="notification-dropdown__subtitle"
+                            >The system has been successfully upgraded. Read
+                            more here.</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="##">
+                        <div class="notification-dropdown-icon danger">
+                          <i data-feather="info" aria-hidden="true"></i>
+                        </div>
+                        <div class="notification-dropdown-text">
+                          <span class="notification-dropdown__title"
+                            >The cache is full!</span
+                          >
+                          <span class="notification-dropdown__subtitle"
+                            >Unnecessary caches take up a lot of memory space
+                            and interfere ...</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="##">
+                        <div class="notification-dropdown-icon info">
+                          <i data-feather="check" aria-hidden="true"></i>
+                        </div>
+                        <div class="notification-dropdown-text">
+                          <span class="notification-dropdown__title"
+                            >New Subscriber here!</span
+                          >
+                          <span class="notification-dropdown__subtitle"
+                            >A new subscriber has subscribed.</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="link-to-page" href="##"
+                        >Go to Notifications page</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  class="search__button rounded-5 d-flex justify-content-center align-items-center bg-white border-0"
+                  type="button"
+                  title="Switch theme">
+                  <span class="search__icon">
+                    <svg
+                      aria-hidden=""
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      fill="#545454">
+                      <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </nav>
+          <!-- End of Searchbar -->
+          <div>
+            <!-- Progress component -->
+            <div class="progress__container mb-1">
+              <h2 class="weight--black fs-5 mb-4">My Classes</h2>
+              <div
+                class="progress__item with-bg w-100 px-4 pt-3 pb-4 rounded-5 text-white d-flex justify-content-between">
+                <button class="progress__control rounded-circle border-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-chevron-right">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+                <div
+                  class="d-flex align-items-center flex-wrap justify-content-center me-5">
+                  <div
+                    class="progress__text-container justify-content-between me-5 me-4">
+                    <a href="!#" class="text-decoration-underline h5 text-white"
+                      >English Orientation 1</a
+                    >
+                    <p class="progress__percentage-text fw-semibold h4 mt-1">
+                      10 out of 24 students enrolled!
+                    </p>
+                  </div>
+                  <div class="">
+                    <div class="parent-chartjs">
+                      <canvas
+                        id="myChartNew"
+                        width="150"
+                        height="150"
+                        style="
+                          display: block;
+                          box-sizing: border-box;
+                          height: 150px;
+                          width: 150px;
+                        "></canvas>
+                    </div>
+                  </div>
+                </div>
+                <button class="progress__control rounded-circle border-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-chevron-right">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- End of Progress component -->
+            <!-- Dashboard's Teacher Tools -->
+            <div class="tools">
+              <h2 class="weight--black fs-5 my-4">Teacher Tools</h2>
+              <ul>
+                <li
+                  class="tools__item rounded-3 d-flex align-items-center mb-4">
+                  <div class="tools__item-icon border-2 border-white border">
+                    <svg
+                      class="h-100 w-100"
+                      fill="#000000"
+                      version="1.1"
+                      id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 56.508 56.508"
+                      xml:space="preserve">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g>
+                          <g>
+                            <path
+                              d="M45.629,39.068V26.521l10.603-5.254c0.183-0.092,0.291-0.283,0.274-0.487c-0.016-0.204-0.151-0.377-0.348-0.438 l-27.756-8.754c-0.098-0.03-0.201-0.03-0.301,0L0.35,20.341c-0.195,0.062-0.333,0.235-0.348,0.438s0.094,0.396,0.276,0.487 l5.787,2.867v11.5c-1.211,0.555-1.77,3.387-1.77,6.041c0,0.274,0.224,0.5,0.5,0.5s0.5-0.226,0.5-0.5 c0-2.293,0.403-3.842,0.77-4.601v4.685c0,0.275,0.224,0.5,0.5,0.5s0.5-0.225,0.5-0.5v-4.412c0.328,0.834,0.647,2.291,0.647,4.328 c0,0.277,0.224,0.5,0.5,0.5s0.5-0.223,0.5-0.5c0-2.564-0.52-5.297-1.647-5.979V24.629l3.814,1.891v12.549 c0,3.814,8.952,5.875,17.375,5.875C36.677,44.943,45.629,42.885,45.629,39.068z M28.254,12.587l26.417,8.333l-9.69,4.803 c-0.045,0.015-0.084,0.035-0.123,0.062l-16.603,8.229L11.65,25.785c-0.038-0.025-0.078-0.047-0.122-0.062l-3.435-1.701 l18.886-3.838c0.271-0.056,0.445-0.319,0.391-0.59c-0.056-0.271-0.32-0.445-0.59-0.39L6.634,23.299l-4.799-2.378L28.254,12.587z M28.254,43.943c-9.65,0-16.375-2.568-16.375-4.875V27.015l16.153,8.006c0.07,0.034,0.146,0.053,0.223,0.053 c0.078,0,0.152-0.019,0.223-0.053l16.15-8.006v12.055C44.629,41.375,37.902,43.943,28.254,43.943z"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="tools__item-content ms-5 ps-4">
+                    <h3 class="h5 fw-bold text-decoration-underline">
+                      Create an Academy
+                    </h3>
+                    <p class="f-14 fw-semibold">
+                      Start working on your first academy in just a few simple
+                      steps.
+                    </p>
+                  </div>
+                  <a
+                    href="./course/academy/create.html"
+                    class="tools__item-control ms-auto border-0 rounded-5 fs-15 text-decoration-none"
+                    >Create</a
+                  >
+                </li>
+                <li
+                  class="tools__item rounded-3 d-flex align-items-center mb-4">
+                  <div class="tools__item-icon">
+                    <svg
+                      class="h-100 w-100"
+                      version="1.0"
+                      id="Layer_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 64 64"
+                      enable-background="new 0 0 64 64"
+                      xml:space="preserve"
+                      fill="#000000">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g>
+                          <path
+                            fill="#231F20"
+                            d="M24.008,32.038L9.541,27.904c-0.527-0.146-1.084,0.155-1.236,0.688c-0.151,0.53,0.156,1.084,0.688,1.236 l14.467,4.134C23.551,33.987,23.643,34,23.734,34c0.435,0,0.835-0.286,0.961-0.726C24.847,32.744,24.539,32.19,24.008,32.038z"></path>
+                          <path
+                            fill="#231F20"
+                            d="M24.008,39.038L9.541,34.905c-0.527-0.146-1.084,0.155-1.236,0.688c-0.151,0.531,0.156,1.084,0.688,1.236 l14.467,4.133C23.551,40.987,23.643,41,23.734,41c0.435,0,0.835-0.286,0.961-0.726C24.847,39.743,24.539,39.19,24.008,39.038z"></path>
+                          <path
+                            fill="#231F20"
+                            d="M24.008,25.038L9.541,20.904c-0.527-0.146-1.084,0.155-1.236,0.688c-0.151,0.53,0.156,1.084,0.688,1.236 l14.467,4.134C23.551,26.987,23.643,27,23.734,27c0.435,0,0.835-0.286,0.961-0.726C24.847,25.744,24.539,25.19,24.008,25.038z"></path>
+                          <path
+                            fill="#231F20"
+                            d="M24.008,18.038L9.541,13.904c-0.527-0.146-1.084,0.155-1.236,0.688c-0.151,0.53,0.156,1.084,0.688,1.236 l14.467,4.134C23.551,19.987,23.643,20,23.734,20c0.435,0,0.835-0.286,0.961-0.726C24.847,18.744,24.539,18.19,24.008,18.038z"></path>
+                          <path
+                            fill="#231F20"
+                            d="M39.963,33.962c0.092,0,0.184-0.013,0.275-0.038l14.467-4.134c0.531-0.152,0.839-0.706,0.688-1.236 c-0.152-0.532-0.708-0.832-1.236-0.688L39.689,32c-0.531,0.152-0.839,0.706-0.688,1.236C39.128,33.676,39.528,33.962,39.963,33.962 z"></path>
+                          <path
+                            fill="#231F20"
+                            d="M54.459,34.905l-14.467,4.133c-0.531,0.152-0.839,0.705-0.688,1.236C39.431,40.714,39.831,41,40.266,41 c0.092,0,0.184-0.013,0.275-0.038l14.467-4.133c0.531-0.152,0.839-0.705,0.688-1.236C55.543,35.061,54.987,34.761,54.459,34.905z"></path>
+                          <path
+                            fill="#231F20"
+                            d="M54.459,20.904l-14.467,4.134c-0.531,0.152-0.839,0.706-0.688,1.236C39.431,26.714,39.831,27,40.266,27 c0.092,0,0.184-0.013,0.275-0.038l14.467-4.134c0.531-0.152,0.839-0.706,0.688-1.236C55.543,21.06,54.987,20.758,54.459,20.904z"></path>
+                          <path
+                            fill="#231F20"
+                            d="M54.459,13.904l-14.467,4.134c-0.531,0.152-0.839,0.706-0.688,1.236C39.431,19.714,39.831,20,40.266,20 c0.092,0,0.184-0.013,0.275-0.038l14.467-4.134c0.531-0.152,0.839-0.706,0.688-1.236C55.543,14.06,54.987,13.76,54.459,13.904z"></path>
+                          <path
+                            fill="#231F20"
+                            d="M63.219,0.414c-0.354-0.271-0.784-0.413-1.221-0.413c-0.172,0-0.345,0.022-0.514,0.066L32,7.93L2.516,0.067 c-0.17-0.045-0.343-0.066-0.515-0.066c-0.437,0-0.866,0.142-1.22,0.413C0.289,0.793,0,1.379,0,2v49.999 c0,0.906,0.609,1.699,1.484,1.933l25.873,6.899C28.089,62.685,29.887,64,32,64s3.911-1.315,4.643-3.169l25.873-6.899 C63.391,53.698,64,52.905,64,51.999V2C64,1.379,63.711,0.793,63.219,0.414z M32,54c0.173,0,0.347-0.022,0.516-0.067L62,46.07v1.954 l-30,7.941L2,48.024V46.07l29.484,7.862C31.653,53.978,31.827,54,32,54z M1.998,2.001c0,0,0.001,0,0.003,0V2L31,9.733v42L2,44 L1.998,2.001z M34.979,59.205c-0.079,1.143-0.785,2.111-1.788,2.546l-0.676,0.181c-0.169,0.045-0.343,0.067-0.516,0.067 s-0.347-0.022-0.516-0.067l-0.676-0.181c-1.003-0.435-1.709-1.403-1.788-2.546L2,51.999v-1.906l29.744,7.874 C31.828,57.989,31.914,58,32,58s0.172-0.011,0.256-0.033L62,50.093v1.906L34.979,59.205z M33,51.733v-42L62,2v42L33,51.733z"></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="tools__item-content ms-5 ps-4">
+                    <h3 class="h5 fw-bold text-decoration-underline">
+                      Create a Study Materials
+                    </h3>
+                    <p class="f-14 fw-semibold">
+                      Create reading, writing, and audible materials for your
+                      students.
+                    </p>
+                  </div>
+                  <button
+                    class="tools__item-arrow ms-auto rounded-circle border-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-chevron-right">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </li>
+                <li
+                  class="tools__item rounded-3 d-flex align-items-center mb-4">
+                  <div class="tools__item-icon">
+                    <svg
+                      class="w-100 h-100"
+                      fill="#000000"
+                      viewBox="0 0 32 32"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <title>star</title>
+                        <path
+                          d="M3.488 13.184l6.272 6.112-1.472 8.608 7.712-4.064 7.712 4.064-1.472-8.608 6.272-6.112-8.64-1.248-3.872-7.808-3.872 7.808z"></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="tools__item-content ms-5 ps-4">
+                    <h3 class="h5 fw-bold text-decoration-underline">
+                      Grade Student's Assessments
+                    </h3>
+                    <p class="f-14 fw-semibold">
+                      Utilize our grading tools to efficiently keep track of
+                      your student's progress.
+                    </p>
+                  </div>
+                  <button
+                    class="tools__item-arrow ms-auto rounded-circle border-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-chevron-right">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <!-- End of Dashboard's Teacher Tools -->
+          </div>
+        </div>
+        <div class="py-4 px-4 bg__main-desktop--gray ms-1">
+          <!-- Infobar component -->
+          <div class="infobar mb-3">
+            <img
+              class="infobar__avatar w-100 rounded-circle"
+              src="../Assets/img/profile.png"
+              alt="User profile" />
+            <div class="infobar__block w-100">
+              <div class="mb-3">
+                <h3 class="weight--black">Natisha Wolf</h3>
+                <p class="mt-1 weight--medium">Teacher</p>
+              </div>
+              <div class="d-flex justify-content-between w-100">
+                <div
+                  class="infobar__course text-white rounded-4 text-center py-3">
+                  <h3 class="text-white fw-bold mb-1">19</h3>
+                  <p>Courses Created</p>
+                </div>
+                <div
+                  class="infobar__course text-white rounded-4 text-center py-3">
+                  <h3 class="text-white fw-bold mb-1">28</h3>
+                  <p>Completed Courses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Infobar component -->
+          <!-- Start of Progress component -->
+          <div
+            class="progress__item hidden-desktop with-bg w-100 px-4 pt-3 pb-4 rounded-5 text-white mt-2 mb-4 justify-content-between">
+            <button class="progress__control rounded-circle border-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            <div
+              class="d-flex align-items-center flex-wrap justify-content-center">
+              <div
+                class="progress__text-container justify-content-between me-5 me-4">
+                <a href="!#" class="text-decoration-underline text-white"
+                  >English Orientation 1</a
+                >
+                <p class="progress__percentage-text fw-semibold mt-1">
+                  You are 78% complete!
+                </p>
+              </div>
+              <div class="">
+                <div class="parent-chartjs">
+                  <canvas
+                    id="myChartNew2"
+                    width="150"
+                    height="150"
+                    style="
+                      display: block;
+                      box-sizing: border-box;
+                      height: 150px;
+                      width: 150px;
+                    "></canvas>
+                </div>
+              </div>
+            </div>
+            <button class="progress__control rounded-circle border-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+          <!-- End of Progress component -->
+          <!-- Start of Calendar component -->
+          <div class="calendar infobar-mid p-relative z-index-2">
+            <div class="calendar__inner wrapper infobar-mid__wrapper rounded-5">
+              <header
+                class="calendar__header d-flex align-items-center justify-content-between">
+                <p class="calendar__current-date current-date fw-medium"></p>
+                <div class="d-flex">
+                  <span
+                    id="prev"
+                    class="material-symbols-rounded calendar__control rounded-circle cursor__desktop text-center d-inline-flex justify-content-center align-items-center"
+                    >chevron_left</span
+                  >
+                  <span
+                    id="next"
+                    class="material-symbols-rounded calendar__control rounded-circle cursor__desktop text-center d-inline-flex justify-content-center align-items-center"
+                    >chevron_right</span
+                  >
+                </div>
+              </header>
+              <div class="calendar__body">
+                <ul class="calendar__weeks mb-0 d-flex flex-wrap text-center">
+                  <li>Sun</li>
+                  <li>Mon</li>
+                  <li>Tue</li>
+                  <li>Wed</li>
+                  <li>Thu</li>
+                  <li>Fri</li>
+                  <li>Sat</li>
+                </ul>
+                <ul
+                  class="calendar__days days d-flex flex-wrap text-center mb-3"></ul>
+              </div>
+            </div>
+          </div>
+          <!-- End of Calendar component -->
+          <!-- Start of Upcoming classes component -->
+          <div class="classes">
+            <div class="upcoming mt-3 p-relative">
+              <h3 class="upcoming__heading weight--black mb-3 h5">
+                Upcoming Classes
+              </h3>
+              <ul class="upcoming__list">
+                <li
+                  class="upcoming__class rounded-4 align-items-center justify-content-start w-100 mb-2">
+                  <div
+                    class="upcoming__date py-2 rounded-2 text-center text-white">
+                    <p class="fw-bold fs-5 mb-1">04</p>
+                    <p class="f-14">Mar</p>
+                  </div>
+                  <div class="upcoming__subject text-nowrap">
+                    <p class="fw-bold mb-1">English 1</p>
+                    <p class="f-14">10:00 AM</p>
+                  </div>
+                  <div class="ms-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-chevron-right">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </div>
+                  <!-- Change this into wrapping the whole container by a tag -->
+                  <a class="upcoming__link ms-auto hidden" href="#">
+                    <span id="next" class="material-symbols-rounded"
+                      >chevron_right</span
+                    >
+                  </a>
+                </li>
+                <li
+                  class="upcoming__class rounded-4 align-items-center justify-content-start w-100 mb-2">
+                  <div
+                    class="upcoming__date py-2 rounded-2 text-center text-white">
+                    <p class="fw-bold fs-5 mb-1">05</p>
+                    <p class="f-14">Mar</p>
+                  </div>
+                  <div class="upcoming__subject text-nowrap">
+                    <p class="fw-bold mb-1">History 1</p>
+                    <p class="f-14">10:00 AM</p>
+                  </div>
+                  <div class="ms-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-chevron-right">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </div>
+                  <!-- Change this into wrapping the whole container by a tag -->
+                  <a class="upcoming__link ms-auto hidden" href="#">
+                    <span id="next" class="material-symbols-rounded"
+                      >chevron_right</span
+                    >
+                  </a>
+                </li>
+                <li
+                  class="upcoming__class rounded-4 align-items-center justify-content-start w-100 mb-2">
+                  <div
+                    class="upcoming__date py-2 rounded-2 text-center text-white">
+                    <p class="fw-bold fs-5 mb-1">07</p>
+                    <p class="f-14">Mar</p>
+                  </div>
+                  <div class="upcoming__subject text-nowrap">
+                    <p class="fw-bold mb-1">History 2</p>
+                    <p class="f-14">10:00 AM</p>
+                  </div>
+                  <div class="ms-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-chevron-right">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </div>
+                  <!-- Change this into wrapping the whole container by a tag -->
+                  <a class="upcoming__link ms-auto hidden" href="#">
+                    <span id="next" class="material-symbols-rounded"
+                      >chevron_right</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End of Upcoming classes component -->
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

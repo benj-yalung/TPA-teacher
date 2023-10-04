@@ -1,0 +1,36 @@
+
+
+.academy {
+  border-top: 2px solid #FFFFFF;
+}
+
+.form__container-max {
+  width: 65%;
+}
+
+.form__container-limited {
+  max-width: 30%;
+  width: 100%;
+}
+
+.form__label {
+  color: #6b6b6b;
+}
+
+.form__input {
+  border: 2px solid #d6d6d6;
+  padding: 6px 1rem;
+  width: 100%;
+}
+
+.form__input::placeholder {
+  font-weight: 600;
+}
+
+.form__control {
+  background-color: #8ca3db;
+}
+
+.form__submit {
+  background-color: #8ca3db;
+}

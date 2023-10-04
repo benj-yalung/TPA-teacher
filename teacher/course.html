@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course | Talent Pro Academy</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="../Assets/img/logo-removebg-preview.png"
+      type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../Assets/css/dashboard.css" />
+    <link rel="stylesheet" href="../Assets/css/dashboard-tab.css" />
+    <link rel="stylesheet" href="../Assets/css/course.css" />
+    <link rel="stylesheet" href="../Assets/css/utilities.css" />
+
+    <!-- Components -->
+    <link rel="stylesheet" href="../components/header/header.css" />
+    <link rel="stylesheet" href="../components/searchbar/searchbar.css" />
+
+    <!-- Google Font Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  </head>
+
+  <body>
+    <div class="page-flex">
+      <!-- ! Sidebar -->
+      <header
+        class="header w-100 flex-row-reverse align-items-center justify-content-between position-sticky"
+        data-target="header">
+        <div></div>
+        <div class="header__logo">
+          <a href="./dashboard.html" title="Home">
+            <img
+              src="../Assets/img/logo-removebg-preview.png"
+              alt="Site Logo"
+              width="100" />
+          </a>
+        </div>
+        <nav class="d-block position-static">
+          <button
+            class="navbar__hamburger bg-white rounded-circle border-0"
+            data-target="headerHamburger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="27.967"
+              height="19.515"
+              viewBox="0 0 27.967 19.515">
+              <path
+                id="hamburger"
+                d="M1374.485,69.048a1.768,1.768,0,0,1,0-3.536h24.471a1.768,1.768,0,0,1,0,3.536Zm0-7.988a1.769,1.769,0,0,1,0-3.537h24.471a1.769,1.769,0,0,1,0,3.537Zm0-7.989a1.769,1.769,0,0,1,0-3.537h24.471a1.769,1.769,0,0,1,0,3.537Z"
+                transform="translate(-1372.738 -49.533)"
+                fill="#9f4bf8" />
+            </svg>
+            <span class="sr-only"></span>
+          </button>
+          <div class="navbar__content w-100">
+            <div class="navbar__content-inner">
+              <div class="navbar__infobar">
+                <div class="d-flex flex-column align-items-center">
+                  <img
+                    class="navbar__infobar-avatar"
+                    src="../Assets/img/profile.png"
+                    alt="User profile" />
+                  <h2 class="weight--black mt-3">Natisha Wolf</h2>
+                  <p class="mt-1 weight--medium">Teacher</p>
+                </div>
+                <div class="d-flex justify-content-between w-100 mt-4 mb-5">
+                  <div
+                    class="navbar__infobar-course rounded-3 text-center py-2 px-4">
+                    <h3 class="text-white fw-bold mb-1">19</h3>
+                    <p>Courses Created</p>
+                  </div>
+                  <div
+                    class="navbar__infobar-course rounded-3 text-center py-2 px-4">
+                    <h3 class="text-white fw-bold mb-1">28</h3>
+                    <p>Completed Courses</p>
+                  </div>
+                </div>
+              </div>
+              <div class="navbar__block">
+                <h3 class="navbar__heading fs-5 mb-4">Menu</h3>
+                <ul class="navlist">
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none"
+                      href="dashboard.html">
+                      <i class="icon fa fa-th-large" aria-hidden="true"></i
+                      >Dashboard
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none"
+                      href="course.html"
+                      aria-current="page">
+                      <i class="icon fa fa-file-text" aria-hidden="true"></i
+                      >Course
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none"
+                      href="grading.html">
+                      <i
+                        class="icon fa fa-graduation-cap"
+                        aria-hidden="true"></i
+                      >Grading
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none"
+                      href="calendar.html">
+                      <i class="icon fa fa-calendar" aria-hidden="true"></i
+                      >Calendar
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none"
+                      href="messages.html">
+                      <i class="icon fa fa-comment" aria-hidden="true"></i
+                      >Message
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none"
+                      href="payroll.html">
+                      <i class="icon fa fa-dollar" aria-hidden="true"></i
+                      >Payroll
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none"
+                      href="privateClasses.html">
+                      <i class="icon fa fa-user" aria-hidden="true"></i>Private
+                      Classes
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none"
+                      href="help.html">
+                      <i class="icon fa fa-question" aria-hidden="true"></i>Help
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar__block">
+                <h3 class="navbar__heading fs-5 mb-4">Account</h3>
+                <ul class="navlist">
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none"
+                      href="settings.html">
+                      <i
+                        class="icon setting fa fa-wrench"
+                        aria-hidden="true"></i
+                      >Settings
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="main-wrapper">
+        <nav class="searchbar ps-5 pe-3 bg__main--gray">
+          <div class="w-100 py-4 d-flex justify-content-between ps-4 pe-3">
+            <div>
+              <div class="p-relative">
+                <input
+                  class="search__input rounded-5 px-4 bg-white"
+                  type="text"
+                  placeholder="Search"
+                  required />
+                <i data-feather="search" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="me-3 p-relative">
+                <button
+                  class="search__button rounded-5 d-flex justify-content-center align-items-center bg-white border-0"
+                  type="button">
+                  <span class="sr-only">To messages</span>
+                  <span class="active search__icon" aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      fill="#545454">
+                      <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z" />
+                    </svg>
+                  </span>
+                </button>
+                <ul class="search__dropdown rounded position-absolute bg-white">
+                  <li>
+                    <a href="##">
+                      <div class="notification-dropdown-icon info">
+                        <i data-feather="check"></i>
+                      </div>
+                      <div class="notification-dropdown-text">
+                        <span class="notification-dropdown__title"
+                          >System just updated</span
+                        >
+                        <span class="notification-dropdown__subtitle"
+                          >The system has been successfully upgraded. Read more
+                          here.</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="##">
+                      <div class="notification-dropdown-icon danger">
+                        <i data-feather="info" aria-hidden="true"></i>
+                      </div>
+                      <div class="notification-dropdown-text">
+                        <span class="notification-dropdown__title"
+                          >The cache is full!</span
+                        >
+                        <span class="notification-dropdown__subtitle"
+                          >Unnecessary caches take up a lot of memory space and
+                          interfere ...</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="##">
+                      <div class="notification-dropdown-icon info">
+                        <i data-feather="check" aria-hidden="true"></i>
+                      </div>
+                      <div class="notification-dropdown-text">
+                        <span class="notification-dropdown__title"
+                          >New Subscriber here!</span
+                        >
+                        <span class="notification-dropdown__subtitle"
+                          >A new subscriber has subscribed.</span
+                        >
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="link-to-page" href="##"
+                      >Go to Notifications page</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <button
+                class="search__button rounded-5 d-flex justify-content-center align-items-center bg-white border-0 me-3"
+                type="button"
+                title="Switch theme">
+                <span class="search__icon">
+                  <svg
+                    aria-hidden=""
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    fill="#545454">
+                    <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                  </svg>
+                </span>
+              </button>
+              <div class="position-relatives">
+                <button
+                  class="search__button search__profile rounded-5 d-flex justify-content-center align-items-center bg-white border-0"
+                  type="button"
+                  title="Switch theme"></button>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- ! Main -->
+        <main class="main users course-page" id="skip-target">
+          <div class="main-start">
+            <div class="enrolled-course-container">
+              <div class="enrolled-course-row ps-4 ms-2">
+                <div class="d-flex w-100 justify-content-between">
+                  <h2 class="main-title fw-black h4">My Classes</h2>
+                  <a
+                    class="text-decoration-underline"
+                    href="./course/classes.html"
+                    >View more</a
+                  >
+                </div>
+                <div class="tutor">
+                  <div class="tutor-item enrolled-item">
+                    <img
+                      src="../Assets/img/profile.png"
+                      alt="Subject profile"
+                      class="subject-profile" />
+                    <div class="subject-text">
+                      <h3 class="fw-bold h6">English Orientation 1</h3>
+                      <p class="fw-medium">Start date: <span>10/02/23</span></p>
+                    </div>
+                    <div class="overall-grade px-0">
+                      <h3 class="grade-container h5 mb-1 fw-bold">10/20</h3>
+                      <span class="fs-14 px-4 line-h-1">Enrolled Students</span>
+                    </div>
+                    <div class="see-course-btn see-course-btn_modal">
+                      <a href="#"
+                        ><span id="next" class="material-symbols-rounded"
+                          >chevron_right</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                  <div class="tutor-item enrolled-item">
+                    <img
+                      src="../Assets/img/profile.png"
+                      alt="Subject profile"
+                      class="subject-profile" />
+                    <div class="subject-text">
+                      <h3 class="fw-bold h6">English Orientation 2</h3>
+                      <p class="fw-medium">Start date: <span>10/02/23</span></p>
+                    </div>
+                    <div class="overall-grade px-0">
+                      <h3 class="grade-container h5 mb-1 fw-bold">10/24</h3>
+                      <span class="fs-14 px-4 line-h-1">Enrolled Students</span>
+                    </div>
+                    <div class="see-course-btn see-course-btn_modal">
+                      <a href="#"
+                        ><span id="next" class="material-symbols-rounded"
+                          >chevron_right</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                  <div class="tutor-item enrolled-item">
+                    <img
+                      src="../Assets/img/profile.png"
+                      alt="Subject profile"
+                      class="subject-profile" />
+                    <div class="subject-text">
+                      <h3 class="fw-bold h6">English Orientation 3</h3>
+                      <p class="fw-medium">Start date: <span>10/02/23</span></p>
+                    </div>
+                    <div class="overall-grade px-0">
+                      <h3 class="grade-container h5 mb-1 fw-bold">14/26</h3>
+                      <span class="fs-14 px-4 line-h-1">Enrolled Students</span>
+                    </div>
+                    <div class="see-course-btn see-course-btn_modal">
+                      <a href="#"
+                        ><span id="next" class="material-symbols-rounded"
+                          >chevron_right</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="find-tutor-conatiner">
+              <div class="find-tutor-inner">
+                <h2 class="h4 fw-bold mb-3">Create an Academy</h2>
+                <p class="line-h-revert">
+                  Start working on your first academy in just a few simple
+                  steps.
+                </p>
+                <a
+                  href="./course/academy/create.html"
+                  class="btn btn-primary enroll-now-btn border-0 py-2 rounded-4"
+                  >Get Started</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="main-mid">
+            <section class="find-courses ps-5">
+              <div class="carousel-header">
+                <span class="carousel-heading fw-black">Choose Objective</span>
+                <ul class="search-filter fc-search-filter">
+                  <li class="search-filter__grid fc-search-filter__grid">
+                    <a href="#fc-tab1"
+                      ><i class="fa fa-th-large fa-2x" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="search-filter__list fc-search-filter__list">
+                    <a href="#fc-tab2"
+                      ><i class="fa fa-bars fa-2x" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="search-wrapper">
+                    <input
+                      type="text"
+                      class="carousel-search"
+                      placeholder="Search Objective"
+                      required />
+                    <i data-feather="search" aria-hidden="true"></i>
+                  </li>
+                </ul>
+              </div>
+              <div id="fc-tab1" class="carousel fc-tab-content">
+                <div class="carousel-cell">
+                  <div class="carousel-cell-inner check-course-btn_modal">
+                    <img
+                      src="../Assets/img/computing-removebg-preview.png"
+                      alt="Subject image" />
+                    <h3
+                      class="find-course-img h5 fw-bold opacity-75 opacity-75">
+                      Computing
+                    </h3>
+                  </div>
+                </div>
+                <div class="carousel-cell check-course-btn_modal">
+                  <div class="carousel-cell-inner">
+                    <img
+                      src="../Assets/img/economics-removebg-preview.png"
+                      alt="Subject image" />
+                    <h3
+                      class="find-course-img h5 fw-bold opacity-75 opacity-75">
+                      Economics
+                    </h3>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="carousel-cell-inner check-course-btn_modal">
+                    <img
+                      src="../Assets/img/en-removebg-preview.png"
+                      alt="Subject image" />
+                    <h3
+                      class="find-course-img h5 fw-bold opacity-75 opacity-75">
+                      English
+                    </h3>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="carousel-cell-inner check-course-btn_modal">
+                    <img
+                      src="../Assets/img/math-removebg-preview.png"
+                      alt="Subject image" />
+                    <h3
+                      class="find-course-img h5 fw-bold opacity-75 opacity-75">
+                      Math
+                    </h3>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="carousel-cell-inner check-course-btn_modal">
+                    <img src="../Assets/img/profile.png" alt="Subject image" />
+                    <h3
+                      class="find-course-img h5 fw-bold opacity-75 opacity-75">
+                      Reading & Language Arts
+                    </h3>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="carousel-cell-inner check-course-btn_modal">
+                    <img src="../Assets/img/profile.png" alt="Subject image" />
+                    <h3
+                      class="find-course-img h5 fw-bold opacity-75 opacity-75">
+                      Science
+                    </h3>
+                  </div>
+                </div>
+                <div class="carousel-cell check-course-btn_modal">
+                  <div class="carousel-cell-inner check-course-btn_modal">
+                    <img src="../Assets/img/profile.png" alt="Subject image" />
+                    <h3
+                      class="find-course-img h5 fw-bold opacity-75 opacity-75">
+                      Computing
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div id="fc-tab2" class="find-courses-listing fc-tab-content">
+                <ul class="find-courses-list">
+                  <li class="find-course-list-item-1">
+                    <a href="##">Computing</a>
+                  </li>
+                  <li class="find-course-list-item-2">
+                    <a href="##">Economics</a>
+                  </li>
+                  <li class="find-course-list-item-3">
+                    <a href="##">English</a>
+                  </li>
+                  <li class="find-course-list-item-4">
+                    <a href="##">Fine Arts</a>
+                  </li>
+                  <li class="find-course-list-item-5">
+                    <a href="##">Health</a>
+                  </li>
+                  <li class="find-course-list-item-6">
+                    <a href="##">Humanities</a>
+                  </li>
+                  <li class="find-course-list-item-7">
+                    <a href="##">Life Skills</a>
+                  </li>
+                  <li class="find-course-list-item-8">
+                    <a href="##">Math</a>
+                  </li>
+                  <li class="find-course-list-item-8">
+                    <a href="##">Physical Education</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="career-development ps-5">
+              <div class="carousel-header">
+                <span class="carousel-heading"
+                  >Career Development Programs</span
+                >
+                <ul class="search-filter cd-search-filter">
+                  <li class="search-filter__grid cd-search-filter__grid">
+                    <a href="#cd-tab1"
+                      ><i class="fa fa-th-large fa-2x" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="search-filter__list cd-search-filter__list">
+                    <a href="#cd-tab2"
+                      ><i class="fa fa-bars fa-2x" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li class="search-wrapper">
+                    <input
+                      type="text"
+                      class="carousel-search"
+                      placeholder="Search Programs"
+                      required />
+                    <i data-feather="search" aria-hidden="true"></i>
+                  </li>
+                </ul>
+              </div>
+              <div
+                id="cd-tab1"
+                class="career-development-grid carousel-career cd-tab-content">
+                <div class="carousel-cell">
+                  <div class="carousel-cell-inner check-program-btn_modal">
+                    <img
+                      src="../Assets/img/bma-removebg-preview.png"
+                      alt="Subject image" />
+                    <h3
+                      class="find-course-img h5 fw-bold opacity-75 opacity-75">
+                      Business, Management, & Administration
+                    </h3>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="carousel-cell-inner check-program-btn_modal">
+                    <img
+                      src="../Assets/img/lpp-removebg-preview.png"
+                      alt="Subject image" />
+                    <h3
+                      class="find-course-img h5 fw-bold opacity-75 opacity-75">
+                      Law & Public Policy
+                    </h3>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="carousel-cell-inner check-program-btn_modal">
+                    <img
+                      src="../Assets/img/st-removebg-preview.png"
+                      alt="Subject image" />
+                    <h3
+                      class="find-course-img h5 fw-bold opacity-75 opacity-75">
+                      Science & Technology
+                    </h3>
+                  </div>
+                </div>
+                <div class="carousel-cell">
+                  <div class="carousel-cell-inner check-program-btn_modal">
+                    <img
+                      src="../Assets/img/css-removebg-preview.png"
+                      alt="Subject image" />
+                    <h3
+                      class="find-course-img h5 fw-bold opacity-75 opacity-75">
+                      Community & Social Services
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="cd-tab2"
+                class="career-development-listing cd-tab-content">
+                <ul class="find-courses-list">
+                  <li class="find-course-list-item-1">
+                    <a href="##">Computing</a>
+                  </li>
+                  <li class="find-course-list-item-2">
+                    <a href="##">Economics</a>
+                  </li>
+                  <li class="find-course-list-item-3">
+                    <a href="##">English</a>
+                  </li>
+                  <li class="find-course-list-item-4">
+                    <a href="##">Fine Arts</a>
+                  </li>
+                  <li class="find-course-list-item-5">
+                    <a href="##">Health</a>
+                  </li>
+                  <li class="find-course-list-item-6">
+                    <a href="##">Humanities</a>
+                  </li>
+                  <li class="find-course-list-item-7">
+                    <a href="##">Life Skills</a>
+                  </li>
+                  <li class="find-course-list-item-8">
+                    <a href="##">Math</a>
+                  </li>
+                  <li class="find-course-list-item-8">
+                    <a href="##">Physical Education</a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+
+      <!-- MODAL -->
+      <div
+        id="courseModal"
+        class="modal find-courses-modal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-overlay check-course-btn_modal"></div>
+        <div class="modal-wrapper modal-transition">
+          <div class="modal-header">
+            <h2 class="modal-heading">
+              Course Subject: <span><u>English</u></span>
+            </h2>
+            <div class="modal-header_right">
+              <span class="modal-header_filter"
+                ><i class="fa fa-sliders fa-lg" aria-hidden="true"></i
+                >Filter</span
+              >
+              <span class="check-course-btn_modal btn_modal_times"
+                ><i class="fa fa-times fa-lg" aria-hidden="true"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <div class="modal-content">
+              <div class="tutor">
+                <div class="tutor-item fc-modal-item tutor-modal">
+                  <img
+                    src="../Assets/img/profile.png"
+                    alt="Subject profile"
+                    class="subject-profile" />
+                  <div class="courses-text">
+                    <h3>English Sign Language</h3>
+                    <br />
+                    <p>Start date: <span>10/02/23</span></p>
+                    <p>Classes: <span>M, W, and F</span></p>
+                  </div>
+                  <div class="completed-assignment">
+                    <h3 class="completed-container">4</h3>
+                    <span>Completed Assignments</span>
+                  </div>
+                  <div class="start-now-box">
+                    <a class="enroll-now-btn" href="#">Enroll Now</a>
+                  </div>
+                </div>
+                <div class="tutor-item fc-modal-item">
+                  <img
+                    src="../Assets/img/profile.png"
+                    alt="Subject profile"
+                    class="subject-profile" />
+                  <div class="courses-text">
+                    <h3>English Sign Language</h3>
+                    <br />
+                    <p>Start date: <span>10/02/23</span></p>
+                    <p>Classes: <span>M, W, and F</span></p>
+                  </div>
+                  <div class="completed-assignment">
+                    <h3 class="completed-container">4</h3>
+                    <span>Completed Assignments</span>
+                  </div>
+                  <div class="start-now-box">
+                    <a class="enroll-now-btn" href="#">Enroll Now</a>
+                  </div>
+                </div>
+                <div class="tutor-item fc-modal-item">
+                  <img
+                    src="../Assets/img/profile.png"
+                    alt="Subject profile"
+                    class="subject-profile" />
+                  <div class="courses-text">
+                    <h3>English Sign Language</h3>
+                    <br />
+                    <p>Start date: <span>10/02/23</span></p>
+                    <p>Classes: <span>M, W, and F</span></p>
+                  </div>
+                  <div class="completed-assignment">
+                    <h3 class="completed-container">4</h3>
+                    <span>Completed Assignments</span>
+                  </div>
+                  <div class="start-now-box">
+                    <a class="enroll-now-btn" href="#">Enroll Now</a>
+                  </div>
+                </div>
+                <div class="tutor-item fc-modal-item">
+                  <img
+                    src="../Assets/img/profile.png"
+                    alt="Subject profile"
+                    class="subject-profile" />
+                  <div class="courses-text">
+                    <h3>English Sign Language</h3>
+                    <br />
+                    <p>Start date: <span>10/02/23</span></p>
+                    <p>Classes: <span>M, W, and F</span></p>
+                  </div>
+                  <div class="completed-assignment">
+                    <h3 class="completed-container">4</h3>
+                    <span>Completed Assignments</span>
+                  </div>
+                  <div class="start-now-box">
+                    <a class="enroll-now-btn" href="#">Enroll Now</a>
+                  </div>
+                </div>
+                <div class="tutor-item fc-modal-item">
+                  <img
+                    src="../Assets/img/profile.png"
+                    alt="Subject profile"
+                    class="subject-profile" />
+                  <div class="courses-text">
+                    <h3>English Sign Language</h3>
+                    <br />
+                    <p>Start date: <span>10/02/23</span></p>
+                    <p>Classes: <span>M, W, and F</span></p>
+                  </div>
+                  <div class="completed-assignment">
+                    <h3 class="completed-container">4</h3>
+                    <span>Completed Assignments</span>
+                  </div>
+                  <div class="start-now-box">
+                    <a class="enroll-now-btn" href="#">Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal career-development-modal">
+        <div class="modal-overlay check-program-btn_modal"></div>
+        <div class="modal-wrapper modal-transition">
+          <div class="modal-header">
+            <h2 class="modal-heading">
+              Career Development Programs:
+              <span><u>Business, Management & Administration</u></span>
+            </h2>
+            <div class="modal-header_right">
+              <span class="modal-header_filter"
+                ><i class="fa fa-sliders fa-lg" aria-hidden="true"></i
+                >Filter</span
+              >
+              <span class="check-program-btn_modal btn_modal_times"
+                ><i class="fa fa-times fa-lg" aria-hidden="true"></i
+              ></span>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <div class="modal-content">
+              <div class="tutor">
+                <div class="tutor-item cd-modal-item">
+                  <img
+                    src="../Assets/img/profile.png"
+                    alt="Subject profile"
+                    class="subject-profile" />
+                  <div class="program-text">
+                    <h3>English Sign Language</h3>
+                  </div>
+                  <div class="completed-assignment">
+                    <h3 class="completed-container">24</h3>
+                    <span>Coures</span>
+                  </div>
+                  <div class="start-now-box">
+                    <a class="start-now-btn" href="#">Enroll Now</a>
+                  </div>
+                </div>
+                <div class="tutor-item cd-modal-item">
+                  <img
+                    src="../Assets/img/profile.png"
+                    alt="Subject profile"
+                    class="subject-profile" />
+                  <div class="program-text">
+                    <h3>English Sign Language</h3>
+                  </div>
+                  <div class="completed-assignment">
+                    <h3 class="completed-container">24</h3>
+                    <span>Coures</span>
+                  </div>
+                  <div class="start-now-box">
+                    <a class="start-now-btn" href="#">Enroll Now</a>
+                  </div>
+                </div>
+                <div class="tutor-item cd-modal-item">
+                  <img
+                    src="../Assets/img/profile.png"
+                    alt="Subject profile"
+                    class="subject-profile" />
+                  <div class="program-text">
+                    <h3>English Sign Language</h3>
+                  </div>
+                  <div class="completed-assignment">
+                    <h3 class="completed-container">24</h3>
+                    <span>Coures</span>
+                  </div>
+                  <div class="start-now-box">
+                    <a class="start-now-btn" href="#">Enroll Now</a>
+                  </div>
+                </div>
+                <div class="tutor-item cd-modal-item">
+                  <img
+                    src="../Assets/img/profile.png"
+                    alt="Subject profile"
+                    class="subject-profile" />
+                  <div class="program-text">
+                    <h3>English Sign Language</h3>
+                  </div>
+                  <div class="completed-assignment">
+                    <h3 class="completed-container">24</h3>
+                    <span>Coures</span>
+                  </div>
+                  <div class="start-now-box">
+                    <a class="start-now-btn" href="#">Enroll Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../components/header/header.js"></script>
+
+    <!-- FLICKITY CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <!-- FLICKITY JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Modal Custom JS -->
+    <script src="../Assets/js/modal-course.js"></script>
+
+    <script>
+      var flkty = new Flickity(".carousel", {
+        cellAlign: "left",
+        contain: true,
+        draggable: true,
+        pageDots: false,
+      });
+
+      var flkty = new Flickity(".carousel-career", {
+        cellAlign: "left",
+        contain: true,
+        draggable: true,
+        pageDots: false,
+      });
+
+      if (matchMedia("screen and (min-width: 1199px)").matches) {
+        cellAlign: "center";
+      }
+
+      // FIND COURSES MODAL
+      $(".check-course-btn_modal").on("click", function (e) {
+        e.preventDefault();
+        $(".find-courses-modal").toggleClass("is-visible");
+      });
+
+      // CAREER DEVELOPMENT MODAL
+
+      $(".check-program-btn_modal").on("click", function (e) {
+        e.preventDefault();
+        $(".career-development-modal").toggleClass("is-visible");
+      });
+
+      //FIND COURSES TABS
+      // Show the first tab and hide the rest
+      $(".fc-search-filter li:first-child").addClass("active");
+      $(".fc-tab-content").hide();
+      $(".fc-tab-content:first").show();
+
+      // Click function
+      $(".fc-search-filter li").click(function () {
+        $(".fc-search-filter li").removeClass("active");
+        $(this).addClass("active");
+        $(".fc-tab-content").hide();
+
+        var activeTab = $(this).find("a").attr("href");
+        $(activeTab).fadeIn();
+        return false;
+      });
+
+      // CAREER DEVELOPMENT TABS
+      // Show the first tab and hide the rest
+      $(".cd-search-filter li:first-child").addClass("active");
+      $(".cd-tab-content").hide();
+      $(".cd-tab-content:first").show();
+
+      // Click function
+      $(".cd-search-filter li").click(function () {
+        $(".cd-search-filter li").removeClass("active");
+        $(this).addClass("active");
+        $(".cd-tab-content").hide();
+
+        var activeTab = $(this).find("a").attr("href");
+        $(activeTab).fadeIn();
+        return false;
+      });
+    </script>
+  </body>
+</html>
+<style>
+  .see-course-btn.see-course-btn_modal {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img.subject-profile {
+    width: 10%;
+  }
+  .carousel-cell-inner {
+    grid-gap: 10px;
+    height: 190px;
+    width: 75%;
+    padding: 0 1.5rem 1rem;
+  }
+  .overall-grade,
+  .completed-assignment {
+    width: 130px;
+  }
+  .tutor-item:hover .overall-grade,
+  .tutor-item:hover .completed-assignment {
+    background-color: #877bc0;
+  }
+
+  .modal-content {
+    padding: 20px;
+  }
+  .tutor-item.fc-modal-item {
+    width: 90%;
+  }
+  .modal-wrapper.modal-transition {
+    width: 57%;
+  }
+  div#fc-tab2 {
+    padding: 0 20px;
+  }
+  .career-development,
+  .find-courses {
+    padding-bottom: 0.4em;
+  }
+  .flickity-viewport {
+    height: 240px !important;
+  }
+  @media only screen and (max-width: 768px) {
+    .overall-grade,
+    .completed-assignment {
+      width: 100%;
+    }
+    .see-course-btn.see-course-btn_modal {
+      display: none;
+    }
+    .search-wrapper .carousel-search {
+      width: 100%;
+      margin-left: 10px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    img.subject-profile {
+      width: 35%;
+    }
+  }
+</style>

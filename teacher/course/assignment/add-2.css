@@ -1,0 +1,87 @@
+
+
+.course {
+  border-top: 2px solid #FFFFFF;
+}
+
+.form__options {
+  max-width: 80px;
+}
+
+.form__options-icon {
+  color: #545454;
+  height: 3rem;
+  width: 3rem;
+}
+
+.form__label {
+  color: #6b6b6b;
+}
+
+.form__input,
+.form__textarea {
+  border: 2px solid #d6d6d6;
+  padding: 6px 1rem;
+  width: 100%;
+}
+
+.form__select {
+  max-width: 220px;
+}
+
+.form__required::before {
+  content: "";
+  background-color: #e0e0e0;
+  height: 100%;
+  inset: 50% -1rem auto auto;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 2px;
+}
+
+.form__required-control {
+  background: none;
+  color: #545454;
+  height: 2.5rem;
+  width: 1.75rem;
+}
+
+.form__required-container {
+  background-color: #e0e0e0;
+}
+
+.form__required-radio:first-of-type:checked + .form__required-label::before {
+  transform: translate(0, -50%);
+}
+
+.form__required-label {
+  width: 56px;
+}
+
+.form__required-label:first-of-type::before {
+  content: "";
+  background-color: #FFFFFF;
+  border-radius: 3rem;
+  height: 85%;
+  inset: 50% auto auto 2px;
+  position: absolute;
+  transform: translate(calc(100% + 8px), -50%);
+  width: 50px;
+  z-index: 10;
+}
+
+.form__input--small {
+  max-width: 160px;
+}
+
+.form__control {
+  padding: .25rem 2.5rem;
+}
+
+.form__back {
+  background-color: #53f0fc;
+}
+
+.form__submit {
+  background-color: #718ed4;
+}

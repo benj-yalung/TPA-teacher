@@ -1,0 +1,35 @@
+
+
+.searchbar .search__input {
+  border: 1px solid #cccccc;
+  height: 40px;
+  width: 450px;
+}
+
+.searchbar .search__input::placeholder {
+  color: gray;
+}
+
+.searchbar .search__button {
+  height: 40px;
+  width: 40px;
+}
+
+.searchbar .search__icon {
+  display: flex;
+  height: 18px;
+  width: 18px;
+}
+
+.searchbar .search__dropdown {
+  box-shadow: 0 -2px 24px rgba(160, 163, 189, .25);
+  inset: 60px 20px;
+  opacity: 0;
+  padding: 5px 10px;
+  visibility: hidden;
+  width: 125px;
+}
+
+.searchbar .search__profile {
+  background: url("../../Assets/img/profile.png") no-repeat center center /100% 100%;
+}

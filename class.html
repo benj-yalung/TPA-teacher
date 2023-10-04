@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pro Tutor | Class</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/login.css">
+    <link href="https://fonts.cdnfonts.com/css/amsterdam-2" rel="stylesheet">
+    
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- BOOTSTRAP CSS/JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- MY STYLES -->
+    <link rel="stylesheet" href="./Assets/css/my-css/login-custom-bg.css">
+
+    <!-- FULLCALENDAR CSS/JS -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js'></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js'></script>
+
+    <script src="plugins/fullCalendar.js"></script>
+    <link rel="stylesheet" href="Assets/css/my-css/full-calendar.css">
+
+    <!-- PIE CHART -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="plugins/my-chart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- OFF CANVAS SIDE BAR -->
+      <div class="offcanvas offcanvas-start sidebar-nav text-white custom-sidebar-color" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <nav class="navbar-dark">
+            <div class="d-flex justify-content-center">
+                <ul class="navbar-nav ">
+                    <li>
+                        <div class="text-center mt-4">
+                            <img src="Assets/img/logo-removebg-preview.png" style="width: 100px; height: 80px;" class="card-img-top" alt="...">
+                        </div>
+                    </li>
+                    <li class="my-4">
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2">
+                                <i class="bi bi-speedometer2"></i>
+                            </span>
+                            <span class="fw-bold">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2">
+                                <i class="bi bi-journal"></i>
+                            </span>
+                            <span class="fw-bold">Course</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2">
+                                <i class="bi bi-mortarboard-fill"></i>
+                            </span>
+                            <span class="fw-bold">Grading</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2">
+                                <i class="bi bi-calendar"></i>
+                            </span>
+                            <span class="fw-bold">Calendar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2">
+                                <i class="bi bi-chat-fill"></i>
+                            </span>
+                            <span class="fw-bold">Message</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2">
+                                <i class="bi bi-currency-dollar"></i>
+                            </span>
+                            <span class="fw-bold">Payroll</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2">
+                                <i class="bi bi-person-circle"></i>
+                            </span>
+                            <span class="fw-bold">Private Classes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2">
+                                <i class="bi bi-question-lg"></i>
+                            </span>
+                            <span class="fw-bold">Help</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2">
+                                <i class="bi bi-gear-fill"></i>
+                            </span>
+                            <span class="fw-bold">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+           
+        </nav>
+      </div>
+
+    <!-- MAIN -->   
+    <main class="bg-white">
+        <div class="container-fluid bg-white">
+            <!-- FIRST ROW -->
+            <div class="row text-white mb-1 px-5 bg-light">
+                <!-- THIS IS THE SEARCH -->
+                <div class="col-md-5 bg-light">
+                    <div class="input-group mb-3 mt-3">
+                        <input type="text" class="form-control custom-border-page-3" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text custom-border-page-3" id="basic-addon2">
+                            <i class="bi bi-search"></i>
+                        </span>
+                    </div>
+                </div>  
+                <!-- THIS IS THE SPACE -->
+                <div class="col-md-4 bg-light"></div>
+                <!-- THIS IS THE BELL -->
+                <div class="col-md-1 bg-light d-flex justify-content-center align-items-center">
+                        <div class="border border-2 border-white px-3 py-2 rounded-circle">
+                            <i class="bi bi-bell-fill text-dark"></i>
+                        </div>
+                </div>
+                <!-- THIS IS THE EMAIL -->
+                <div class="col-md-1 bg-light d-flex justify-content-center align-items-center">
+                        <div class="border border-2 border-white px-3 py-2 rounded-circle">
+                            <i class="bi bi-envelope-fill text-dark"></i>
+                        </div>
+                </div>
+                <!-- THIS IS THE PROFILE PIC -->
+                <div class="col-md-1 bg-light d-flex justify-content-center align-items-center">
+                    <div class="border border-2 border-white rounded-circle">
+                        <img src="Assets/img/profile.png" alt="" style="width: 45px; height: 45px;">
+                    </div>
+                </div>
+            </div>            
+            <!-- SECOND ROW -->
+            <div class="row">
+                <div class="col-md-12 bg-light px-5" >
+                    <p class="fs-5 fw-bold"> My Classes</p>
+                </div>
+            </div>
+            <!-- THIRD ROW -->
+            <div class="row px-5 bg-light">
+                <!-- THIS IS THE SEARCH -->
+                <div class="col-md-5 bg-light" >
+                    <div class="input-group mb-3 mt-3">
+                        <input type="text" class="form-control custom-border-page-3" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text custom-border-page-3" id="basic-addon2">
+                            <i class="bi bi-search"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-5 bg-light" >
+                </div>
+                <div class="col-md-2 bg-light d-flex align-items-center justify-content-center" >
+                    <div class="mx-1"><i class="bi bi-list"></i></div>
+                    <div class="mx-1">Filter</div>
+                </div>
+            </div>
+            <!-- FOURTH ROW TABLE -->
+            <div class="row px-5 bg-light">
+                <div class="col-md-12">
+                    <!-- THIS IS THE TABLE -->
+                    <table class="table table-striped custom-border-page-3 bg-white">
+                        <thead>
+                        <tr class="text-center">
+                            <th scope="col">Course Name</th>
+                            <th scope="col">Create Date</th>
+                            <th scope="col">Attended</th>
+                            <th scope="col">Sales</th>
+                            <th scope="col">Enrollments</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="text-center">
+                            <td>English Orientation 1</td>
+                            <td>10/12/2023</td>
+                            <td class="fw-bold custom-font-calendar-color text-decoration-underline">6 of 6</td>
+                            <td>$1,032.30</td>
+                            <td>12/26</td>
+                            <td>Unpublished</td>
+                            <td class="d-flex justify-content-center dropdown">
+                                <a class="text-dark bi bi-three-dots" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Unpublish Course</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Course</a></li>
+                                    <li><a class="dropdown-item" href="#">Duplicate Course</a></li>
+                                    <li><a class="dropdown-item" href="#">View Curriculums</a></li>
+                                    <li><a class="dropdown-item" href="#">View Course</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>English Creative Writing</td>
+                            <td>10/13/2023</td>
+                            <td class="fw-bold custom-font-calendar-color text-decoration-underline">6 of 6</td>
+                            <td>$1,032.30</td>
+                            <td>12/26</td>
+                            <td>Unpublished</td>
+                            <td class="d-flex justify-content-center dropdown">
+                                <a class="text-dark bi bi-three-dots" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Unpublish Course</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Course</a></li>
+                                    <li><a class="dropdown-item" href="#">Duplicate Course</a></li>
+                                    <li><a class="dropdown-item" href="#">View Curriculums</a></li>
+                                    <li><a class="dropdown-item" href="#">View Course</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Speech</td>
+                            <td>10/25/2023</td>
+                            <td class="fw-bold custom-font-calendar-color text-decoration-underline">8 of 8</td>
+                            <td>$2,395.42</td>
+                            <td>15/25</td>
+                            <td>Published</td>
+                            <td class="d-flex justify-content-center dropdown">
+                                <a class="text-dark bi bi-three-dots" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Unpublish Course</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Course</a></li>
+                                    <li><a class="dropdown-item" href="#">Duplicate Course</a></li>
+                                    <li><a class="dropdown-item" href="#">View Curriculums</a></li>
+                                    <li><a class="dropdown-item" href="#">View Course</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Writing and Reading 101</td>
+                            <td>11/12/2023</td>
+                            <td class="fw-bold custom-font-calendar-color text-decoration-underline">5 of 5</td>
+                            <td>$801.23</td>
+                            <td>13/25</td>
+                            <td>Umpublished</td>
+                            <td class="d-flex justify-content-center dropdown">
+                                <a class="text-dark bi bi-three-dots" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Unpublish Course</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Course</a></li>
+                                    <li><a class="dropdown-item" href="#">Duplicate Course</a></li>
+                                    <li><a class="dropdown-item" href="#">View Curriculums</a></li>
+                                    <li><a class="dropdown-item" href="#">View Course</a></li>
+                                </ul>
+                            </td>
+                            
+                        </tr>
+                        <tr class="text-center">
+                            <td>Verbs and Nouns</td>
+                            <td>12/12/2023</td>
+                            <td class="fw-bold custom-font-calendar-color text-decoration-underline">6 of 6</td>
+                            <td>$124.49</td>
+                            <td>12/27</td>
+                            <td>Published</td>
+                            <!-- <td class="d-flex justify-content-center"><i class="bi bi-three-dots"></i></td> -->
+                            <td class="d-flex justify-content-center dropdown">
+                                <a class="text-dark bi bi-three-dots" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Unpublish Course</a></li>
+                                    <li><a class="dropdown-item" href="#">Delete Course</a></li>
+                                    <li><a class="dropdown-item" href="#">Duplicate Course</a></li>
+                                    <li><a class="dropdown-item" href="#">View Curriculums</a></li>
+                                    <li><a class="dropdown-item" href="#">View Course</a></li>
+                                </ul>
+                            </td>
+                        </tr>   
+                        </thead>
+
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    </main>
+</body>

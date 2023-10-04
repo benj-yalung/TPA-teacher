@@ -1,0 +1,79 @@
+/* bg of log in form, page 1 */
+.custom-bg {
+    background: linear-gradient(254deg, rgba(48, 226, 252, 1) 0%, rgba(159, 77, 253, 1) 98%);
+    /* Add any other styling you want for the button here */
+    color: white; /* Change text color to ensure readability */
+}
+
+/* custom bg color in page 2 for form*/
+.custom-gray-100 {
+    background-color: #f3fbfc; /* Replace with your desired color value */
+}
+
+/* custom border radius in second page form */
+.custom-rounded {
+    border-radius: 15px; /* Adjust the value to control the roundness */
+}
+
+/* custom border width and height for Back button in page 2 */
+.custom-sized {
+    padding: 8px 8px !important; /* Adjust the padding as needed */
+    width: 70px !important; /* Adjust the width as needed */
+    height: 40px;
+}
+
+/* off canvas custom css page 3 */
+:root{
+    --offcanvas-width:270px;
+    /* --topNavbarHeight: 56px; */
+    --blue-800: #18145a;
+    --container-course: #6761e0;
+    --container-calendar: #a7a3f3;
+}
+.sidebar-nav{
+    width: var(--offcanvas-width);
+}
+@media (min-width: 992px){
+    body{
+        overflow: auto !important;
+    } 
+    .offcanvas-backdrop::before{
+        display: none;
+    } 
+    main{
+        margin-left: var(--offcanvas-width);
+    }
+    .sidebar-nav{
+        transform: none;
+        visibility: visible !important;
+        /* top:var(--topNavbarHeight); */
+        /* height: calc(100% - var(--topNavbarHeight)); */
+    }
+
+}
+/* this is for the sidebar bg color */
+.custom-sidebar-color {
+    background-color: var(--blue-800);
+}
+.custom-sidebar-font-color {
+    color: var(--blue-800);
+}
+.custom-container-course-color {
+    background-color: var(--container-course);
+}
+.custom-container-calendar-color {
+    background-color: var(--container-calendar);
+}
+.custom-font-calendar-color {
+    color: var(--container-calendar);
+}
+.custom-border-page-3{
+    border-radius: 20px;
+}
+/* THIS IS FOR THE CREATE BUTTON IN TEACHER TOOLS PAGE 3 */
+.custom-teach-tool-create-color{
+    background-color: #8a63d2;
+}
+.custom-teach-tool-create-color:hover {
+    background-color: #6b46c1; /* Change to purple-200 color on hover */
+}

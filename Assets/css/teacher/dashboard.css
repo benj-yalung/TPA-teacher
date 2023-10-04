@@ -1,0 +1,73 @@
+
+
+.tools {
+  padding: 1.5rem 2rem 2rem 5rem;
+}
+
+@media (min-width: 1000px) {
+  
+  .tools {
+    border-top: .25rem solid #FFFFFF;
+  }
+}
+
+.tools__item {
+  background-color: #FFFFFF;
+  padding: 24px 24px 32px 20px;
+}
+
+.tools__item:first-of-type {
+  background: url("../../svg/box-border.svg") no-repeat -50%;
+  background-color: #0f0346;
+  color: #FFFFFF;
+}
+
+.tools__item:first-of-type .tools__item-icon {
+  border: 1.5px solid #FFFFFF;
+}
+
+.tools__item:first-of-type .tools__item-content{
+  color: #FFFFFF;
+}
+
+.tools__item:first-of-type .tools__item-control{
+  background-color: #877bc0;
+  color: #FFFFFF;
+}
+
+.tools__item:first-of-type .tools__item-icon svg {
+  fill: #FFFFFF;
+}
+
+.tools__item-icon {
+  border: 2px solid #0f0346;
+  max-width: 3.5rem;
+  padding: .5rem;
+}
+
+.tools__item-icon svg {
+  fill: #0f0346;
+}
+
+.tools__item-content {
+  color: #0f0346;
+  max-width: 320px;
+}
+
+.tools__item-content p {
+  line-height: 1.25;
+}
+
+.tools__item-control {
+  padding: .25rem 24px;
+}
+
+.tools__item-arrow {
+  background-color: #000000;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.tools__item-arrow svg {
+  stroke: #FFFFFF;
+}

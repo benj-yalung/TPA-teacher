@@ -1,0 +1,46 @@
+
+
+.profile__avatar {
+  object-fit: cover;
+  height: 20rem;
+  width: 20rem;
+}
+
+.profile__avatar-input:focus-visible + .profile__avatar-label {
+  outline: 2px dashed #5e7fcd;
+}
+
+.profile__avatar-label {
+  border: 1px solid rgb(71, 71, 71);
+  border-radius: 1rem;
+}
+
+.tabs__button-add {
+  background-color: #718ed4;
+  border-radius: 1rem;
+}
+
+.tabs__form {
+  display: none;
+}
+
+.tabs__contents:focus-visible {
+  outline: none;
+}
+
+.tabs__contents.editable .tabs__data {
+  display: none;
+}
+
+.tabs__contents.editable .tabs__form {
+  display: block;
+}
+
+.tabs__edit-button {
+  background: none;
+  width: 1.5rem;
+}
+
+.form__button {
+  background: none;
+}

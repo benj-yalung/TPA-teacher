@@ -1,0 +1,66 @@
+
+
+.classes {
+  border-top: 2px solid #FFFFFF;
+}
+
+.form__label {
+  color: #6b6b6b;
+}
+
+.form__input,
+.form__textarea {
+  border: 2px solid #d6d6d6;
+  padding: 6px 1rem;
+  width: 100%;
+}
+
+.form__textarea {
+  resize: none;
+}
+
+.form__radio:checked + .form__radio-label{
+  background-color: #718ed4;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+
+.form__radio:checked +.form__radio-label .form__radio-label-icon {
+  color: #FFFFFF;
+}
+
+.form__radio-label {
+  border: 2px solid #d6d6d6;
+  width: 220px;
+}
+
+@media (min-width: 1000px) {
+  .form__radio-label:hover {
+    cursor: pointer;
+  }
+}
+
+.form__radio-label-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.form__radio-label-icon {
+  color: #718ed4;
+}
+
+.form__input--small {
+  max-width: 160px;
+}
+
+.form__control {
+  padding: .25rem 2.5rem;
+}
+
+.form__back {
+  background-color: #53f0fc;
+}
+
+.form__submit {
+  background-color: #718ed4;
+}

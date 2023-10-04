@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academy | Talent Pro Academy</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous" />
+
+    <!-- Components -->
+    <link rel="stylesheet" href="../../../../components/header/header.css" />
+    <link
+      rel="stylesheet"
+      href="../../../../components/searchbar/searchbar.css" />
+
+    <!-- Base -->
+    <link rel="stylesheet" href="../../../../Assets/css/style.css" />
+    <link rel="stylesheet" href="../../../../Assets/css/utilities.css" />
+
+    <!-- Page -->
+    <link rel="stylesheet" href="./add-1.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+
+    <!-- Google Font Link for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Icons library -->
+    <script src="../../../../plugins/feather.min.js" defer></script>
+
+    <!-- Components Scripts -->
+    <script src="../../../../components/header/header.js" defer></script>
+  </head>
+
+  <body class="">
+    <div class="flex__desktop">
+      <!-- Header -->
+      <header
+        class="header w-100 flex-row-reverse align-items-center justify-content-between position-sticky"
+        data-target="header">
+        <div></div>
+        <div class="header__logo">
+          <a href="../dashboard.html" title="Home">
+            <img
+              src="../../../Assets/img/logo-removebg-preview.png"
+              alt="Site Logo"
+              width="100" />
+          </a>
+        </div>
+        <nav class="d-block position-static">
+          <button
+            class="navbar__hamburger bg-white rounded-circle border-0"
+            data-target="headerHamburger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="27.967"
+              height="19.515"
+              viewBox="0 0 27.967 19.515">
+              <path
+                id="hamburger"
+                d="M1374.485,69.048a1.768,1.768,0,0,1,0-3.536h24.471a1.768,1.768,0,0,1,0,3.536Zm0-7.988a1.769,1.769,0,0,1,0-3.537h24.471a1.769,1.769,0,0,1,0,3.537Zm0-7.989a1.769,1.769,0,0,1,0-3.537h24.471a1.769,1.769,0,0,1,0,3.537Z"
+                transform="translate(-1372.738 -49.533)"
+                fill="#9f4bf8" />
+            </svg>
+            <span class="sr-only"></span>
+          </button>
+          <div class="navbar__content w-100">
+            <div class="navbar__content-inner">
+              <div class="navbar__infobar">
+                <div class="d-flex flex-column align-items-center">
+                  <img
+                    class="navbar__infobar-avatar"
+                    src="../Assets/img/profile.png"
+                    alt="User profile" />
+                  <h2 class="weight--black mt-3">Natisha Wolf</h2>
+                  <p class="mt-1 weight--medium">Teacher</p>
+                </div>
+                <div class="d-flex justify-content-between w-100 mt-4 mb-5">
+                  <div
+                    class="navbar__infobar-course rounded-3 text-center py-2 px-4">
+                    <h3 class="text-white fw-bold mb-1">19</h3>
+                    <p>Courses Created</p>
+                  </div>
+                  <div
+                    class="navbar__infobar-course rounded-3 text-center py-2 px-4">
+                    <h3 class="text-white fw-bold mb-1">28</h3>
+                    <p>Completed Courses</p>
+                  </div>
+                </div>
+              </div>
+              <div class="navbar__block">
+                <h3 class="navbar__heading fs-5 mb-4">Menu</h3>
+                <ul class="navlist">
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="../../dashboard.html">
+                      <i class="icon fa fa-th-large" aria-hidden="true"></i
+                      >Dashboard
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="../../course.html"
+                      aria-current="page">
+                      <i class="icon fa fa-file-text" aria-hidden="true"></i
+                      >Course
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="../../grading.html">
+                      <i
+                        class="icon fa fa-graduation-cap"
+                        aria-hidden="true"></i
+                      >Grading
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="../../calendar.html">
+                      <i class="icon fa fa-calendar" aria-hidden="true"></i
+                      >Calendar
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="../../messages.html">
+                      <i class="icon fa fa-comment" aria-hidden="true"></i
+                      >Message
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="../../payroll.html">
+                      <i class="icon fa fa-dollar" aria-hidden="true"></i
+                      >Payroll
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="../../privateClasses.html">
+                      <i class="icon fa fa-user" aria-hidden="true"></i>Private
+                      Classes
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="../../help.html">
+                      <i class="icon fa fa-question" aria-hidden="true"></i>Help
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar__block">
+                <h3 class="navbar__heading fs-5 mb-4">Account</h3>
+                <ul class="navlist">
+                  <li class="mb-2">
+                    <a
+                      class="show-cat-btn navlink text-decoration-none fw-medium"
+                      href="../../settings.html">
+                      <i
+                        class="icon setting fa fa-wrench"
+                        aria-hidden="true"></i
+                      >Settings
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- End of Header -->
+      <main class="w-100 min-h-screen">
+        <div class="w-100 p-relative h-100 bg__main--gray">
+          <!-- Searchbar -->
+          <nav class="searchbar ps-5 pe-3">
+            <div class="w-100 py-4 d-flex justify-content-between ps-4 pe-3">
+              <div>
+                <div class="p-relative">
+                  <input
+                    class="search__input rounded-5 px-4 bg-white"
+                    type="text"
+                    placeholder="Search"
+                    required />
+                  <i data-feather="search" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="me-3 p-relative">
+                  <button
+                    class="search__button rounded-5 d-flex justify-content-center align-items-center bg-white border-0"
+                    type="button">
+                    <span class="sr-only">To messages</span>
+                    <span class="active search__icon" aria-hidden="true">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                        fill="#545454">
+                        <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                          d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul
+                    class="search__dropdown rounded position-absolute bg-white">
+                    <li>
+                      <a href="##">
+                        <div class="notification-dropdown-icon info">
+                          <i data-feather="check"></i>
+                        </div>
+                        <div class="notification-dropdown-text">
+                          <span class="notification-dropdown__title"
+                            >System just updated</span
+                          >
+                          <span class="notification-dropdown__subtitle"
+                            >The system has been successfully upgraded. Read
+                            more here.</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="##">
+                        <div class="notification-dropdown-icon danger">
+                          <i data-feather="info" aria-hidden="true"></i>
+                        </div>
+                        <div class="notification-dropdown-text">
+                          <span class="notification-dropdown__title"
+                            >The cache is full!</span
+                          >
+                          <span class="notification-dropdown__subtitle"
+                            >Unnecessary caches take up a lot of memory space
+                            and interfere ...</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="##">
+                        <div class="notification-dropdown-icon info">
+                          <i data-feather="check" aria-hidden="true"></i>
+                        </div>
+                        <div class="notification-dropdown-text">
+                          <span class="notification-dropdown__title"
+                            >New Subscriber here!</span
+                          >
+                          <span class="notification-dropdown__subtitle"
+                            >A new subscriber has subscribed.</span
+                          >
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="link-to-page" href="##"
+                        >Go to Notifications page</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  class="search__button rounded-5 d-flex justify-content-center align-items-center bg-white border-0 me-3"
+                  type="button"
+                  title="Switch theme">
+                  <span class="search__icon">
+                    <svg
+                      aria-hidden=""
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                      fill="#545454">
+                      <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <path
+                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="position-relatives">
+                  <button
+                    class="search__button search__profile rounded-5 d-flex justify-content-center align-items-center bg-white border-0"
+                    type="button"
+                    title="Switch theme"></button>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- End of Searchbar -->
+          <div class="classes px-5 py-5">
+            <div class="ps-4">
+              <h1 class="fw-black h5 mb-4 pb-2">My Classes</h1>
+              <!-- Form start -->
+              <form class="form bg-white rounded-4 p-5 mb-5" action="">
+                <h2 class="fw-black h5 mb-5">Add Assignments</h2>
+                <div class="mb-5">
+                  <div class="w-100 mb-3">
+                    <label class="form__label fw-semibold fs-15" for="name"
+                      >Curriculum Name</label
+                    >
+                    <input
+                      class="form__input w-100 d-block"
+                      id="name"
+                      type="text" />
+                  </div>
+                  <div class="w-100 mb-3">
+                    <label
+                      class="form__label fw-semibold fs-15"
+                      for="description"
+                      >Description</label
+                    >
+                    <textarea
+                      class="form__textarea w-100 d-block"
+                      rows="5"
+                      id="description"
+                      type="text"></textarea>
+                  </div>
+                  <fieldset class="mb-3">
+                    <legend class="form__label fw-semibold fs-15">Type</legend>
+                    <div>
+                      <div class="d-flex mb-3">
+                        <div class="me-4">
+                          <input
+                            class="sr-only form__radio"
+                            type="radio"
+                            name="type"
+                            id="video" />
+                          <label
+                            class="form__radio-label form__label fw-semibold fs-15 d-flex justify-content-center py-2"
+                            for="video">
+                            <div class="form__radio-label-icon me-3">
+                              <svg
+                                class="w-100 h-100"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                  id="SVGRepo_tracerCarrier"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                  <path
+                                    d="M22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15Z"
+                                    stroke="currentcolor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                  <path
+                                    d="M2.51953 7.10986H21.4795"
+                                    stroke="currentcolor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                  <path
+                                    d="M8.51953 2.10986V6.96986"
+                                    stroke="currentcolor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                  <path
+                                    d="M15.4805 2.10986V6.51986"
+                                    stroke="currentcolor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                  <path
+                                    d="M9.75 14.4501V13.2501C9.75 11.7101 10.84 11.0801 12.17 11.8501L13.21 12.4501L14.25 13.0501C15.58 13.8201 15.58 15.0801 14.25 15.8501L13.21 16.4501L12.17 17.0501C10.84 17.8201 9.75 17.1901 9.75 15.6501V14.4501V14.4501Z"
+                                    stroke="currentcolor"
+                                    stroke-width="1.5"
+                                    stroke-miterlimit="10"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                </g>
+                              </svg>
+                            </div>
+                            Watch Video
+                          </label>
+                        </div>
+                        <div class="me-4">
+                          <input
+                            class="sr-only form__radio"
+                            type="radio"
+                            name="type"
+                            id="homework" />
+                          <label
+                            class="form__radio-label form__label fw-semibold fs-15 d-flex justify-content-center py-2"
+                            for="homework">
+                            <div class="form__radio-label-icon me-3">
+                              <svg
+                                viewBox="0 0 24 24"
+                                fill="currentcolor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                  id="SVGRepo_tracerCarrier"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                  <path
+                                    d="M11.4001 18.1612L11.4001 18.1612L18.796 10.7653C17.7894 10.3464 16.5972 9.6582 15.4697 8.53068C14.342 7.40298 13.6537 6.21058 13.2348 5.2039L5.83882 12.5999L5.83879 12.5999C5.26166 13.1771 4.97307 13.4657 4.7249 13.7838C4.43213 14.1592 4.18114 14.5653 3.97634 14.995C3.80273 15.3593 3.67368 15.7465 3.41556 16.5208L2.05445 20.6042C1.92743 20.9852 2.0266 21.4053 2.31063 21.6894C2.59466 21.9734 3.01478 22.0726 3.39584 21.9456L7.47918 20.5844C8.25351 20.3263 8.6407 20.1973 9.00498 20.0237C9.43469 19.8189 9.84082 19.5679 10.2162 19.2751C10.5343 19.0269 10.823 18.7383 11.4001 18.1612Z"
+                                    fill="currentcolor"></path>
+                                  <path
+                                    d="M20.8482 8.71306C22.3839 7.17735 22.3839 4.68748 20.8482 3.15178C19.3125 1.61607 16.8226 1.61607 15.2869 3.15178L14.3999 4.03882C14.4121 4.0755 14.4246 4.11268 14.4377 4.15035C14.7628 5.0875 15.3763 6.31601 16.5303 7.47002C17.6843 8.62403 18.9128 9.23749 19.85 9.56262C19.8875 9.57563 19.9245 9.58817 19.961 9.60026L20.8482 8.71306Z"
+                                    fill="currentcolor"></path>
+                                </g>
+                              </svg>
+                            </div>
+                            Homework
+                          </label>
+                        </div>
+                        <div class="me-4">
+                          <input
+                            class="sr-only form__radio"
+                            type="radio"
+                            name="type"
+                            id="reading" />
+                          <label
+                            class="form__radio-label form__label fw-semibold fs-15 d-flex justify-content-center py-2"
+                            for="reading">
+                            <div class="form__radio-label-icon me-3">
+                              <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                  id="SVGRepo_tracerCarrier"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                  <rect
+                                    width="24"
+                                    height="24"
+                                    fill="none"></rect>
+                                  <path
+                                    d="M12 6.90909C10.8999 5.50893 9.20406 4.10877 5.00119 4.00602C4.72513 3.99928 4.5 4.22351 4.5 4.49965C4.5 6.54813 4.5 14.3034 4.5 16.597C4.5 16.8731 4.72515 17.09 5.00114 17.099C9.20405 17.2364 10.8999 19.0998 12 20.5M12 6.90909C13.1001 5.50893 14.7959 4.10877 18.9988 4.00602C19.2749 3.99928 19.5 4.21847 19.5 4.49461C19.5 6.78447 19.5 14.3064 19.5 16.5963C19.5 16.8724 19.2749 17.09 18.9989 17.099C14.796 17.2364 13.1001 19.0998 12 20.5M12 6.90909L12 20.5"
+                                    stroke="currentcolor"
+                                    stroke-linejoin="round"></path>
+                                  <path
+                                    d="M19.2353 6H21.5C21.7761 6 22 6.22386 22 6.5V19.539C22 19.9436 21.5233 20.2124 21.1535 20.0481C20.3584 19.6948 19.0315 19.2632 17.2941 19.2632C14.3529 19.2632 12 21 12 21C12 21 9.64706 19.2632 6.70588 19.2632C4.96845 19.2632 3.64156 19.6948 2.84647 20.0481C2.47668 20.2124 2 19.9436 2 19.539V6.5C2 6.22386 2.22386 6 2.5 6H4.76471"
+                                    stroke="currentcolor"
+                                    stroke-linejoin="round"></path>
+                                </g>
+                              </svg>
+                            </div>
+                            Reading
+                          </label>
+                        </div>
+                      </div>
+                      <div class="d-flex">
+                        <div class="me-4">
+                          <input
+                            class="sr-only form__radio"
+                            type="radio"
+                            name="type"
+                            id="quiz" />
+                          <label
+                            class="form__radio-label form__label fw-semibold fs-15 d-flex justify-content-center py-2"
+                            for="quiz">
+                            <div class="form__radio-label-icon me-3">
+                              <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                  id="SVGRepo_tracerCarrier"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                  <path
+                                    d="M12 14C12 14 12 13.3223 12 12.5C12 11.6777 15.5 11.5 15.5 9C15.5 7.5 14 6.5 12 6.5C10.5 6.5 9 7.5 9 9"
+                                    stroke="currentcolor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                  <path
+                                    d="M13.2271 16.9535C13.2271 17.6313 12.6777 18.1807 11.9999 18.1807C11.3221 18.1807 10.7726 17.6313 10.7726 16.9535C10.7726 16.2757 11.3221 15.7262 11.9999 15.7262C12.6777 15.7262 13.2271 16.2757 13.2271 16.9535Z"
+                                    fill="currentcolor"></path>
+                                </g>
+                              </svg>
+                            </div>
+                            Quiz
+                          </label>
+                        </div>
+                        <div class="me-4">
+                          <input
+                            class="sr-only form__radio"
+                            type="radio"
+                            name="type"
+                            id="class" />
+                          <label
+                            class="form__radio-label form__label fw-semibold fs-15 d-flex justify-content-center py-2"
+                            for="class">
+                            <div class="form__radio-label-icon me-3">
+                              <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                  id="SVGRepo_tracerCarrier"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                  <path
+                                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22Z"
+                                    stroke="currentcolor"
+                                    stroke-width="1.5"></path>
+                                  <path
+                                    d="M8 10.5H16"
+                                    stroke="currentcolor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"></path>
+                                  <path
+                                    d="M8 14H13.5"
+                                    stroke="currentcolor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"></path>
+                                </g>
+                              </svg>
+                            </div>
+                            Conversational Class
+                          </label>
+                        </div>
+                        <div class="me-4">
+                          <input
+                            class="sr-only form__radio"
+                            type="radio"
+                            name="type"
+                            id="exam" />
+                          <label
+                            class="form__radio-label form__label fw-semibold fs-15 d-flex justify-content-center py-2"
+                            for="exam">
+                            <div class="form__radio-label-icon me-3">
+                              <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                  id="SVGRepo_tracerCarrier"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                  <path
+                                    d="M8 2V5"
+                                    stroke="currentcolor"
+                                    stroke-width="1.5"
+                                    stroke-miterlimit="10"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                  <path
+                                    d="M16 2V5"
+                                    stroke="currentcolor"
+                                    stroke-width="1.5"
+                                    stroke-miterlimit="10"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                  <path
+                                    d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+                                    stroke="currentcolor"
+                                    stroke-width="1.5"
+                                    stroke-miterlimit="10"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                  <path
+                                    d="M8 11H16"
+                                    stroke="currentcolor"
+                                    stroke-width="1.5"
+                                    stroke-miterlimit="10"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                  <path
+                                    d="M8 16H12"
+                                    stroke="currentcolor"
+                                    stroke-width="1.5"
+                                    stroke-miterlimit="10"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                </g>
+                              </svg>
+                            </div>
+                            Exam
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                  <div class="d-flex">
+                    <div class="form__input--small w-100 me-5">
+                      <label class="form__label fw-semibold fs-15" for="points"
+                        >Total Possible Points</label
+                      >
+                      <input
+                        class="form__input w-100 d-block"
+                        id="points"
+                        type="number" />
+                    </div>
+                    <div class="form__input--small w-100">
+                      <label class="form__label fw-semibold fs-15" for="date"
+                        >Due Date</label
+                      >
+                      <input
+                        class="form__input w-100 d-block"
+                        id="date"
+                        type="date" />
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex mb-5 pb-5">
+                  <button
+                    class="form__back form__control border-0 fw-semibold fs-15 rounded-4 me-4">
+                    Back
+                  </button>
+                  <button
+                    class="form__submit form__control border-0 fw-semibold fs-15 rounded-4 text-white">
+                    Next
+                  </button>
+                </div>
+                <div class="py-5"></div>
+              </form>
+              <!-- End of Form -->
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

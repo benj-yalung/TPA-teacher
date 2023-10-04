@@ -1,0 +1,115 @@
+
+
+.light-button {
+  background-color: #8ba1d6;
+  border-radius: .85rem;
+  color: #FFFFFF;
+  max-width: max-content;
+}
+
+.weight-medium {
+  font-weight: 500;
+}
+
+.weight-black {
+  font-weight: 800;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  padding: 0;
+  width: 1px;
+}
+
+.input__text--default {
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: .5rem;
+  padding: .35rem 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-17 {
+  font-size: 17px;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-s-black {
+  font-weight: 800;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.min-w-100 {
+  min-width: 100%;
+}
+
+.bg__main--gray {
+  background-color: #F7F9FA;
+}
+
+.bg__main-desktop--gray {
+	background-color: #FFFFFF;
+}
+
+.bg__button--lightblue {
+  background-color: #8da4dc;
+}
+
+.text--lightblue {
+  color: #8da4dc;
+}
+
+.resize-none {
+  resize: none;
+}
+
+.line-h-1 {
+  line-height: 1;
+}
+
+.line-h-revert {
+  line-height: revert;
+}
+
+.white-top {
+  border-top: 3px solid #FFFFFF;
+}
+
+@media (min-width: 1000px) {
+  .flex__desktop {
+    display: flex;
+  }
+
+  .cursor__desktop {
+    cursor: pointer;
+  }
+
+  .bg__main-desktop--gray {
+    background-color: #F7F9FA;
+  }
+}

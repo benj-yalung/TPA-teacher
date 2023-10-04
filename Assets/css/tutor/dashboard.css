@@ -1,0 +1,29 @@
+
+
+.dashboard .mylessons__container {
+  padding: 1.5rem 2rem 2rem 4rem;
+}
+
+.dashboard .searchbar {
+  padding: 20px 2rem 20px 4rem;
+}
+
+.create_task {
+  border-top: .25rem solid #FFFFFF;
+  padding: 1.5rem 1.5rem 2rem 4rem;
+}
+
+.tasks {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-rows: repeat(2, 10rem);
+  grid-template-columns: repeat(2, auto);
+}
+
+.tasks__item {
+  background-color: #f4f4f4;
+}
+
+.tasks__more-button span {
+  font-size: 48px;
+}

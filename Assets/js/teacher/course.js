@@ -3,11 +3,18 @@
  */
 
 // Course Action Dropdown
-const button = document.querySelector("[data-id = course-action]");
+const buttons = document.querySelectorAll("[data-id = course-action]");
 
-button.addEventListener("click", () => {
-  button.setAttribute(
-    "aria-expanded",
-    button.getAttribute("aria-expanded") === "true" ? "false" : "true"
-  );
+buttons.forEach((button, idx) => {
+  button.addEventListener("click", () => {
+    buttons.forEach(
+      (innerButton, innerIdx) =>
+        idx !== innerIdx && innerButton.setAttribute("aria-expanded", "false")
+    );
+
+    button.setAttribute(
+      "aria-expanded",
+      button.getAttribute("aria-expanded") === "true" ? "false" : "true"
+    );
+  });
 });

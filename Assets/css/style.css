@@ -110,6 +110,7 @@ p {
   opacity: 0;
   visibility: hidden;
   width: 200%;
+  z-index: 100;
 }
 
 button[data-id="course-action"][aria-expanded="true"] + .course-options {

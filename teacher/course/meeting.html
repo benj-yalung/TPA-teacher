@@ -329,7 +329,7 @@
                 </div>
 
                 <div class="row">
-                  <div class="">
+                  <div class="p-4">
                     <canvas id="attendance-chart"></canvas>
                   </div>
                 </div>
@@ -451,25 +451,8 @@
 
   <!-- START # Post-render Scripts # START -->
 
-  <!-- START # Attendance Donut Chart # START -->
-  <script>
-    const chart = document.getElementById("attendance-chart");
-
-    new Chart(chart, {
-      type: "doughnut",
-      data: {
-        labels: ["On Time", "Late", "Absent"],
-        datasets: [
-          {
-            // label: "",
-            data: [9, 5, 1],
-            borderWidth: 1,
-          },
-        ],
-      },
-    });
-  </script>
-  <!-- END # Attendance Donut Chart # END -->
+  <!-- Chart Components -->
+  <script src="../../Assets/js/teacher/chart-components.js"></script>
 
   <!-- END # Post-render Scripts # END -->
 </html>

@@ -324,8 +324,7 @@
             <div class="row pe-5 bg-light">
               <div class="col-md-12">
                 <!-- THIS IS THE TABLE -->
-                <table
-                  class="table table-striped custom-border-page-3 bg-white">
+                <table class="table custom-border-page-3 bg-white">
                   <thead>
                     <tr>
                       <th class="ps-5 py-3" scope="col">Course Name</th>
@@ -337,6 +336,7 @@
                       <th class="py-3" scope="col">Action</th>
                     </tr>
                   </thead>
+
                   <tbody>
                     <tr>
                       <td class="ps-5">English Orientation 1</td>
@@ -345,44 +345,67 @@
                         class="fw-bold custom-font-calendar-color text-decoration-underline">
                         <a href="meeting.html" class="link-primary">6 of 6</a>
                       </td>
-                      <td clas>$1,032.30</td>
-                      <td clas>12/26</td>
-                      <td clas>Unpublished</td>
-                      <td class="d-flex justify-content-center dropdown">
-                        <a
-                          class="text-dark bi bi-three-dots"
-                          href="#"
-                          id="navbarDropdown"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"></a>
-                        <ul
-                          class="dropdown-menu"
-                          aria-labelledby="navbarDropdown">
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Unpublish Course</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Delete Course</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Duplicate Course</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >View Curriculums</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">View Course</a>
-                          </li>
-                        </ul>
+                      <td class>$1,032.30</td>
+                      <td class>12/26</td>
+                      <td class>Unpublished</td>
+                      <td
+                        class="d-flex justify-content-center position-relative">
+                        <button
+                          class="btn px-2"
+                          data-id="course-action"
+                          aria-expanded="true">
+                          <i class="text-dark bi bi-three-dots"></i>
+                        </button>
+
+                        <!-- START # Course Actions # START -->
+                        <div
+                          class="course-options position-absolute top-50 end-50 card p-3">
+                          <ul class="mb-0">
+                            <li class="mb-1">
+                              <a
+                                class="text-decoration-none text-black-50"
+                                href=""
+                                >Unpublish Course</a
+                              >
+                            </li>
+
+                            <li class="mb-1">
+                              <a
+                                class="text-decoration-none text-black-50"
+                                href=""
+                                >Delete Course</a
+                              >
+                            </li>
+
+                            <li class="mb-1">
+                              <a
+                                class="text-decoration-none text-black-50"
+                                href=""
+                                >Duplicate Course</a
+                              >
+                            </li>
+
+                            <li class="mb-1">
+                              <a
+                                class="text-decoration-none text-black-50"
+                                href=""
+                                >View Curriculums</a
+                              >
+                            </li>
+
+                            <li class="">
+                              <a
+                                class="text-decoration-none text-black-50"
+                                href=""
+                                >View Course</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- END # Course Actions # END -->
                       </td>
                     </tr>
+
                     <tr class="">
                       <td class="ps-5">English Creative Writing</td>
                       <td>10/13/2023</td>
@@ -393,40 +416,7 @@
                       <td>$1,032.30</td>
                       <td>12/26</td>
                       <td>Unpublished</td>
-                      <td class="d-flex justify-content-center dropdown">
-                        <a
-                          class="text-dark bi bi-three-dots"
-                          href="#"
-                          id="navbarDropdown"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"></a>
-                        <ul
-                          class="dropdown-menu"
-                          aria-labelledby="navbarDropdown">
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Unpublish Course</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Delete Course</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Duplicate Course</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >View Curriculums</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">View Course</a>
-                          </li>
-                        </ul>
-                      </td>
+                      <td class="d-flex justify-content-center"></td>
                     </tr>
                     <tr>
                       <td class="ps-5">Speech</td>
@@ -438,40 +428,7 @@
                       <td>$2,395.42</td>
                       <td>15/25</td>
                       <td>Published</td>
-                      <td class="d-flex justify-content-center dropdown">
-                        <a
-                          class="text-dark bi bi-three-dots"
-                          href="#"
-                          id="navbarDropdown"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"></a>
-                        <ul
-                          class="dropdown-menu"
-                          aria-labelledby="navbarDropdown">
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Unpublish Course</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Delete Course</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Duplicate Course</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >View Curriculums</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">View Course</a>
-                          </li>
-                        </ul>
-                      </td>
+                      <td class="d-flex justify-content-center"></td>
                     </tr>
                     <tr>
                       <td class="ps-5">Writing and Reading 101</td>
@@ -482,41 +439,8 @@
                       </td>
                       <td>$801.23</td>
                       <td>13/25</td>
-                      <td>Umpublished</td>
-                      <td class="d-flex justify-content-center dropdown">
-                        <a
-                          class="text-dark bi bi-three-dots"
-                          href="#"
-                          id="navbarDropdown"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"></a>
-                        <ul
-                          class="dropdown-menu"
-                          aria-labelledby="navbarDropdown">
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Unpublish Course</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Delete Course</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Duplicate Course</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >View Curriculums</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">View Course</a>
-                          </li>
-                        </ul>
-                      </td>
+                      <td>Unpublished</td>
+                      <td class="d-flex justify-content-center"></td>
                     </tr>
                     <tr>
                       <td class="ps-5">Verbs and Nouns</td>
@@ -529,40 +453,7 @@
                       <td>12/27</td>
                       <td>Published</td>
                       <!-- <td class="d-flex justify-content-center"><i class="bi bi-three-dots"></i></td> -->
-                      <td class="d-flex justify-content-center dropdown">
-                        <a
-                          class="text-dark bi bi-three-dots"
-                          href="#"
-                          id="navbarDropdown"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"></a>
-                        <ul
-                          class="dropdown-menu"
-                          aria-labelledby="navbarDropdown">
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Unpublish Course</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">Delete Course</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Duplicate Course</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >View Curriculums</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">View Course</a>
-                          </li>
-                        </ul>
-                      </td>
+                      <td class="d-flex justify-content-center"></td>
                     </tr>
                   </tbody>
                 </table>
@@ -573,4 +464,9 @@
       </main>
     </div>
   </body>
+
+  <!-- START # Post-load Scripts # START -->
+  <!-- Custom Scripts -->
+  <script src="../../Assets/js/teacher/course.js"></script>
+  <!-- END # Post-load Scripts # END -->
 </html>

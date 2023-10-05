@@ -106,6 +106,18 @@ p {
   display: none;
 }
 
+.course-options {
+  opacity: 0;
+  visibility: hidden;
+  width: 200%;
+  z-index: 100;
+}
+
+button[data-id="course-action"][aria-expanded="true"] + .course-options {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media (min-width: 1000px) {
   .column-reverse {
     flex-direction: row;

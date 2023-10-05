@@ -37,6 +37,13 @@
 
     <!-- MY STYLES -->
     <link rel="stylesheet" href="../../Assets/css/my-css/login-custom-bg.css" />
+
+    <!-- START # JS Plugins # START -->
+
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- START # JS Plugins # START -->
   </head>
 
   <body>
@@ -296,7 +303,8 @@
             </div>
           </div>
         </nav>
-        <div class="row p-5 mt-1 bg-light">
+
+        <div class="p-5 mt-1 bg-light">
           <div class="px-5">
             <div class="row custom-sidebar-color text-white p-4 mb-4">
               <div>Back</div>
@@ -308,7 +316,7 @@
             <!-- THIS IS THE BODY -->
             <div class="row bg-light px-5">
               <!-- THIS IS THE FIRST COL IN THE BODY -->
-              <div class="col-md-5 bg-light mt-5">
+              <div class="col bg-light mt-5">
                 <div class="row bg-light">
                   <p class="fs-6 fw-bold mb-4">Time Started</p>
                   <div class="fs-6">
@@ -317,6 +325,12 @@
                       homework1chat.txt
                     </p>
                     <p class="mb-2 text-decoration-underline">homework1.mp4</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="">
+                    <canvas id="attendance-chart"></canvas>
                   </div>
                 </div>
               </div>
@@ -434,4 +448,28 @@
       </main>
     </div>
   </body>
+
+  <!-- START # Post-render Scripts # START -->
+
+  <!-- START # Attendance Donut Chart # START -->
+  <script>
+    const chart = document.getElementById("attendance-chart");
+
+    new Chart(chart, {
+      type: "doughnut",
+      data: {
+        labels: ["On Time", "Late", "Absent"],
+        datasets: [
+          {
+            // label: "",
+            data: [9, 5, 1],
+            borderWidth: 1,
+          },
+        ],
+      },
+    });
+  </script>
+  <!-- END # Attendance Donut Chart # END -->
+
+  <!-- END # Post-render Scripts # END -->
 </html>

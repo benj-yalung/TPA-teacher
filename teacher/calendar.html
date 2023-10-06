@@ -42,6 +42,7 @@
     <script
       src="https://kit.fontawesome.com/a7437f466d.js"
       crossorigin="anonymous"></script>
+      
     <!-- Google Font Link for Icons -->
     <link
       rel="stylesheet"
@@ -330,7 +331,10 @@
                 </div>
                 <div class="month-selector">
                   <div class="dropdown">
-                    <button class="dropdown-button btn-week">
+                    <button
+                      class="dropdown-button btn-week"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-blank">
                       Week View <span class="caret-down"></span>
                     </button>
                     <button class="dropdown-button btn--blue">
@@ -678,8 +682,15 @@
 
               <div class="row mb-4">
                 <div class="col">
-                  <p class="fs-6 mb-2 text-black">Attendees: 15</p>
-                  <p class="fs-6 mb-2 text-black">10 minutes before</p>
+                  <div class="d-flex gap-2">
+                    <i class="fa-solid fa-user-group"></i>
+                    <p class="fs-6 mb-2 text-black">Attendees: 15</p>
+                  </div>
+
+                  <div class="d-flex gap-2">
+                    <i class="fa-solid fa-bell"></i>
+                    <p class="fs-6 mb-2 text-black">10 minutes before</p>
+                  </div>
                 </div>
               </div>
 
@@ -701,6 +712,51 @@
         </div>
       </div>
       <!-- END # Calendar Modal # END -->
+
+      <!-- START # Blank Modal # START -->
+      <div class="modal" id="modal-blank">
+        <div class="modal-dialog">
+          <div class="modal-content p-4">
+            <div class="modal-header">
+              <p class="fw-bold fs-6">Hello, modal!</p>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+              <div class="row">
+                <div class="col">
+                  <p class="lh-base fs-6">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quos voluptates sit reprehenderit a numquam corrupti qui,
+                    ullam est et praesentium impedit minima eveniet magni
+                    provident fugit esse doloribus voluptate inventore.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <div class="row">
+                <div class="col">
+                  <button
+                    type="button"
+                    class="btn btn-primary rounded-4 fw-bold border-0"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                    style="background-color: #3f356b">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END # Blank Modal # END -->
     </div>
 
     <style>

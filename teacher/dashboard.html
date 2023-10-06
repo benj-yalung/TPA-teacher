@@ -8,10 +8,18 @@
 
     <!-- Bootstrap -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
 
     <!-- Components -->
     <link rel="stylesheet" href="../components/header/header.css" />
@@ -30,9 +38,9 @@
     <link rel="stylesheet" href="../Assets/css/teacher/dashboard.css" />
 
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <script
+      src="https://kit.fontawesome.com/a7437f466d.js"
+      crossorigin="anonymous"></script>
 
     <!-- Google Font Link for Icons -->
     <link
@@ -205,6 +213,7 @@
         </nav>
       </header>
       <!-- End of Header -->
+
       <main class="d-flex w-100 column-reverse">
         <div class="w-100 p-relative bg__main--gray">
           <!-- Searchbar -->
@@ -224,14 +233,15 @@
                 <div class="me-3 p-relative">
                   <button
                     class="search__button rounded-5 d-flex justify-content-center align-items-center bg-white border-0"
-                    type="button">
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-blank">
                     <span class="sr-only">To messages</span>
                     <span class="active search__icon" aria-hidden="true">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 448 512"
                         fill="#545454">
-                        <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                         <path
                           d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z" />
                       </svg>
@@ -296,14 +306,15 @@
                 <button
                   class="search__button rounded-5 d-flex justify-content-center align-items-center bg-white border-0"
                   type="button"
-                  title="Switch theme">
+                  title="Switch theme"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-blank">
                   <span class="search__icon">
                     <svg
                       aria-hidden=""
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512"
                       fill="#545454">
-                      <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                       <path
                         d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
                     </svg>
@@ -319,26 +330,28 @@
               <h2 class="weight--black fs-5 mb-4">My Classes</h2>
               <div
                 class="progress__item with-bg w-100 px-4 pt-3 pb-4 rounded-5 text-white d-flex justify-content-between">
-                <button class="progress__control rounded-circle border-0">
+                <button
+                  class="btn btn-light rounded-circle border-0"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-chevron-right">
-                    <polyline points="9 18 15 12 9 6"></polyline>
+                    height="1em"
+                    viewBox="0 0 320 512">
+                    <path
+                      d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
                   </svg>
                 </button>
+
                 <div
                   class="d-flex align-items-center flex-wrap justify-content-center me-5">
                   <div
                     class="progress__text-container justify-content-between me-5 me-4">
-                    <a href="!#" class="text-decoration-underline h5 text-white"
+                    <a
+                      href=""
+                      class="text-decoration-underline h5 text-white"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-blank"
                       >English Orientation 1</a
                     >
                     <p class="progress__percentage-text fw-semibold h4 mt-1">
@@ -360,24 +373,23 @@
                     </div>
                   </div>
                 </div>
-                <button class="progress__control rounded-circle border-0">
+
+                <button
+                  class="btn btn-light rounded-circle border-0"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-chevron-right">
-                    <polyline points="9 18 15 12 9 6"></polyline>
+                    height="1em"
+                    viewBox="0 0 320 512">
+                    <path
+                      d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
                   </svg>
                 </button>
               </div>
             </div>
             <!-- End of Progress component -->
+
             <!-- Dashboard's Teacher Tools -->
             <div class="tools">
               <h2 class="weight--black fs-5 my-4">Teacher Tools</h2>
@@ -485,7 +497,9 @@
                     </p>
                   </div>
                   <button
-                    class="tools__item-arrow ms-auto rounded-circle border-0">
+                    class="tools__item-arrow ms-auto rounded-circle border-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -532,7 +546,9 @@
                     </p>
                   </div>
                   <button
-                    class="tools__item-arrow ms-auto rounded-circle border-0">
+                    class="tools__item-arrow ms-auto rounded-circle border-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -553,6 +569,7 @@
             <!-- End of Dashboard's Teacher Tools -->
           </div>
         </div>
+
         <div class="py-4 px-4 bg__main-desktop--gray ms-1">
           <!-- Infobar component -->
           <div class="infobar mb-3">
@@ -580,6 +597,7 @@
             </div>
           </div>
           <!-- End of Infobar component -->
+
           <!-- Start of Progress component -->
           <div
             class="progress__item hidden-desktop with-bg w-100 px-4 pt-3 pb-4 rounded-5 text-white mt-2 mb-4 justify-content-between">
@@ -641,6 +659,7 @@
             </button>
           </div>
           <!-- End of Progress component -->
+
           <!-- Start of Calendar component -->
           <div class="calendar infobar-mid p-relative z-index-2">
             <div class="calendar__inner wrapper infobar-mid__wrapper rounded-5">
@@ -648,18 +667,30 @@
                 class="calendar__header d-flex align-items-center justify-content-between">
                 <p class="calendar__current-date current-date fw-medium"></p>
                 <div class="d-flex">
-                  <span
-                    id="prev"
-                    class="material-symbols-rounded calendar__control rounded-circle cursor__desktop text-center d-inline-flex justify-content-center align-items-center"
-                    >chevron_left</span
-                  >
-                  <span
-                    id="next"
-                    class="material-symbols-rounded calendar__control rounded-circle cursor__desktop text-center d-inline-flex justify-content-center align-items-center"
-                    >chevron_right</span
-                  >
+                  <button
+                    class="btn btn-link ms-auto py-0 px-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-blank">
+                    <span
+                      id="prev"
+                      class="material-symbols-rounded calendar__control rounded-circle cursor__desktop text-center d-inline-flex justify-content-center align-items-center"
+                      >chevron_left</span
+                    >
+                  </button>
+
+                  <button
+                    class="btn btn-link ms-auto py-0 px-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-blank">
+                    <span
+                      id="next"
+                      class="material-symbols-rounded calendar__control rounded-circle cursor__desktop text-center d-inline-flex justify-content-center align-items-center"
+                      >chevron_right</span
+                    >
+                  </button>
                 </div>
               </header>
+
               <div class="calendar__body">
                 <ul class="calendar__weeks mb-0 d-flex flex-wrap text-center">
                   <li>Sun</li>
@@ -676,6 +707,7 @@
             </div>
           </div>
           <!-- End of Calendar component -->
+
           <!-- Start of Upcoming classes component -->
           <div class="classes">
             <div class="upcoming mt-3 p-relative">
@@ -694,7 +726,10 @@
                     <p class="fw-bold mb-1">English 1</p>
                     <p class="f-14">10:00 AM</p>
                   </div>
-                  <div class="ms-auto">
+                  <button
+                    class="btn text-light btn-link ms-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -708,7 +743,7 @@
                       class="feather feather-chevron-right">
                       <polyline points="9 18 15 12 9 6"></polyline>
                     </svg>
-                  </div>
+                  </button>
                   <!-- Change this into wrapping the whole container by a tag -->
                   <a class="upcoming__link ms-auto hidden" href="#">
                     <span id="next" class="material-symbols-rounded"
@@ -727,7 +762,10 @@
                     <p class="fw-bold mb-1">History 1</p>
                     <p class="f-14">10:00 AM</p>
                   </div>
-                  <div class="ms-auto">
+                  <button
+                    class="btn text-dark btn-link ms-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -741,7 +779,7 @@
                       class="feather feather-chevron-right">
                       <polyline points="9 18 15 12 9 6"></polyline>
                     </svg>
-                  </div>
+                  </button>
                   <!-- Change this into wrapping the whole container by a tag -->
                   <a class="upcoming__link ms-auto hidden" href="#">
                     <span id="next" class="material-symbols-rounded"
@@ -760,7 +798,10 @@
                     <p class="fw-bold mb-1">History 2</p>
                     <p class="f-14">10:00 AM</p>
                   </div>
-                  <div class="ms-auto">
+                  <div
+                    class="btn text-dark btn-link ms-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -787,6 +828,51 @@
           </div>
           <!-- End of Upcoming classes component -->
         </div>
+
+        <!-- START # Blank Modal # START -->
+        <div class="modal" id="modal-blank">
+          <div class="modal-dialog">
+            <div class="modal-content p-4">
+              <div class="modal-header">
+                <p class="fw-bold">Hello, modal!</p>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col">
+                    <p class="lh-base">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Quos voluptates sit reprehenderit a numquam corrupti qui,
+                      ullam est et praesentium impedit minima eveniet magni
+                      provident fugit esse doloribus voluptate inventore.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <div class="row">
+                  <div class="col">
+                    <button
+                      type="button"
+                      class="btn btn-primary rounded-4 fw-bold border-0"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                      style="background-color: #3f356b">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END # Blank Modal # END -->
       </main>
     </div>
   </body>

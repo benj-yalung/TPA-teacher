@@ -8,10 +8,19 @@
 
     <!-- Bootstrap -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+
     <!-- Custom -->
     <link rel="stylesheet" href="../Assets/css/reset.css" />
     <link rel="stylesheet" href="../Assets/css/utilities.css" />
@@ -25,10 +34,12 @@
       rel="shortcut icon"
       href="../Assets/img/logo-removebg-preview.png"
       type="image/x-icon" />
+
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <script
+      src="https://kit.fontawesome.com/a7437f466d.js"
+      crossorigin="anonymous"></script>
+
     <!-- Google Font Link for Icons -->
     <link
       rel="stylesheet"
@@ -203,7 +214,9 @@
           <div class="d-flex align-items-center">
             <div class="me-3">
               <button
-                class="searchbar__button d-flex rounded-circle bg-white align-items-center justify-content-center">
+                class="searchbar__button d-flex rounded-circle bg-white align-items-center justify-content-center"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank">
                 <span class="sr-only">To messages</span>
                 <svg
                   aria-hidden="true"
@@ -234,7 +247,9 @@
             </div>
             <div class="me-3">
               <button
-                class="searchbar__button d-flex rounded-circle bg-white align-items-center justify-content-center">
+                class="searchbar__button d-flex rounded-circle bg-white align-items-center justify-content-center"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank">
                 <span class="sr-only">Messages</span>
                 <svg
                   width="18px"
@@ -260,7 +275,9 @@
             </div>
             <div>
               <button
-                class="searchbar__button d-flex rounded-circle bg-white align-items-center justify-content-center border-0">
+                class="searchbar__button d-flex rounded-circle bg-white align-items-center justify-content-center border-0"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-blank">
                 <span class="sr-only">Profile</span>
                 <img
                   class="rounded-circle object-fit-cover"
@@ -273,12 +290,14 @@
             </div>
           </div>
         </div>
+
         <div class="d-flex">
           <div class="pb-5 questions bg__main--gray w-100 position-relative">
             <div class="questions__radial">
               <span class="rounded-circle position-absolute"></span>
               <span class="rounded-circle position-absolute"></span>
             </div>
+
             <div class="questions__header position-relative z-2">
               <div class="ps-4">
                 <h2 class="fw-black fs-4">Search for a question</h2>
@@ -293,11 +312,14 @@
                 </div>
               </div>
             </div>
+
             <ul class="px-5 ms-4 pb-4">
               <li class="question active mb-3">
                 <a
                   class="fw-semibold text-white fs-5 p-2 rounded-4 d-inline-flex align-items-center"
-                  href="#">
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-blank">
                   Getting Started
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -314,69 +336,94 @@
                   </svg>
                 </a>
               </li>
+
               <li class="question mb-3">
                 <a
                   class="text-secondary fs-5 p-2 ps-0 rounded-4 d-inline-flex align-items-center"
-                  href="#">
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-blank">
                   <span>Billing information</span>
                 </a>
               </li>
+
               <li class="question mb-3">
                 <a
                   class="text-secondary fs-5 p-2 ps-0 rounded-4 d-inline-flex align-items-center"
-                  href="#">
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-blank">
                   <span>How to reset my password?</span>
                 </a>
               </li>
+
               <li class="question mb-3">
                 <a
                   class="text-secondary fs-5 p-2 ps-0 rounded-4 d-inline-flex align-items-center"
-                  href="#">
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-blank">
                   <span>How to start a course?</span>
                 </a>
               </li>
+
               <li class="question mb-3">
                 <a
                   class="text-secondary fs-5 p-2 ps-0 rounded-4 d-inline-flex align-items-center"
-                  href="#">
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-blank">
                   <span>How to cancel a course?</span>
                 </a>
               </li>
+
               <li class="question mb-3">
                 <a
                   class="text-secondary fs-5 p-2 ps-0 rounded-4 d-inline-flex align-items-center"
-                  href="#">
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-blank">
                   <span>Where can I apply?</span>
                 </a>
               </li>
+
               <li class="question mb-3">
                 <a
                   class="text-secondary fs-5 p-2 ps-0 rounded-4 d-inline-flex align-items-center"
-                  href="#">
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-blank">
                   <span>How do I create a meeting?</span>
                 </a>
               </li>
+
               <li class="question mb-3">
                 <a
                   class="text-secondary fs-5 p-2 ps-0 rounded-4 d-inline-flex align-items-center"
-                  href="#">
+                  href=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-blank">
                   <span>Where can I view my student grades</span>
                 </a>
               </li>
             </ul>
+
             <div class="px-5">
               <div class="ms-4 questions__help rounded-4 py-4 px-3">
                 <h3 class="text-white fs-4 mb-3">Do you still need help?</h3>
                 <div class="px-3">
                   <a
                     class="rounded-3 bg-white w-100 d-flex align-items-center justify-content-center fs-5 py-2 fw-bold"
-                    href="#"
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-blank"
                     >Contact Us</a
                   >
                 </div>
               </div>
             </div>
           </div>
+
           <div class="faq w-100 bg__main--gray ms-1">
             <div class="profile__tab-interface mt-4">
               <div class="tabs pe-5">
@@ -396,6 +443,7 @@
                     data-target="tabsChoice">
                     FAQs
                   </button>
+
                   <button
                     class="tabs__choice col-2 fw-bold fs-6 py-2"
                     role="tab"
@@ -407,6 +455,7 @@
                     data-target="tabsChoice">
                     My Tickets
                   </button>
+
                   <button
                     class="tabs__choice col-3 fw-bold fs-6 py-2"
                     role="tab"
@@ -418,11 +467,15 @@
                     data-target="tabsChoice">
                     Resolved Tickets
                   </button>
+
                   <button
-                    class="questions__contact bg__button--lightblue ms-auto text-white rounded-4 col-6 py-1 px-5">
+                    class="questions__contact bg__button--lightblue ms-auto text-white rounded-4 col-6 py-1 px-5"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-blank">
                     Contact US
                   </button>
                 </div>
+
                 <div
                   class="tabs__contents px-4 py-4 w-100"
                   id="interface1"
@@ -437,12 +490,17 @@
                     <div
                       class="d-flex align-items-center justify-content-between">
                       <button
-                        class="bg__button--lightblue rounded-5 py-1 px-3 text-white">
+                        class="bg__button--lightblue rounded-5 py-1 px-3 text-white"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-blank">
                         Create Ticket
                       </button>
-                      <div class="filters">
+
+                      <div class="">
                         <button
-                          class="filters__trigger text-secondary d-inline-flex align-items-center">
+                          class="btn btn-link text-decoration-none text-dark"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modal-blank">
                           <svg
                             class="me-2"
                             aria-hidden="true"
@@ -494,6 +552,7 @@
                         </button>
                       </div>
                     </div>
+
                     <ul class="mt-5">
                       <li class="ticket bg-white rounded-5 p-4 mb-4">
                         <p class="text--lightblue fs-14 fw-bold">
@@ -512,6 +571,7 @@
                           </p>
                         </div>
                       </li>
+
                       <li class="ticket bg-white rounded-5 p-4 mb-4">
                         <p class="text--lightblue fs-14 fw-bold">
                           Ticket #45298
@@ -529,6 +589,7 @@
                           </p>
                         </div>
                       </li>
+
                       <li class="ticket bg-white rounded-5 p-4 mb-4">
                         <p class="text--lightblue fs-14 fw-bold">
                           Ticket #45298
@@ -549,6 +610,7 @@
                     </ul>
                   </div>
                 </div>
+
                 <div
                   class="tabs__contents px-4 py-4 w-100 hidden"
                   id="interface2"
@@ -563,12 +625,17 @@
                     <div
                       class="d-flex align-items-center justify-content-between">
                       <button
-                        class="bg__button--lightblue rounded-5 py-1 px-3 text-white">
+                        class="bg__button--lightblue rounded-5 py-1 px-3 text-white"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-blank">
                         Create Ticket
                       </button>
-                      <div class="filters">
+
+                      <div class="">
                         <button
-                          class="filters__trigger text-secondary d-inline-flex align-items-center">
+                          class="btn btn-link text-decoration-none text-dark"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modal-blank">
                           <svg
                             class="me-2"
                             aria-hidden="true"
@@ -620,6 +687,7 @@
                         </button>
                       </div>
                     </div>
+
                     <ul class="mt-5">
                       <li class="ticket bg-white rounded-5 p-4 mb-4">
                         <p class="text--lightblue fs-14 fw-bold">
@@ -638,6 +706,7 @@
                           </p>
                         </div>
                       </li>
+
                       <li class="ticket bg-white rounded-5 p-4 mb-4">
                         <p class="text--lightblue fs-14 fw-bold">
                           Ticket #45298
@@ -658,6 +727,7 @@
                     </ul>
                   </div>
                 </div>
+
                 <div
                   class="tabs__contents px-4 py-4 w-100 hidden"
                   id="interface3"
@@ -672,12 +742,17 @@
                     <div
                       class="d-flex align-items-center justify-content-between">
                       <button
-                        class="bg__button--lightblue rounded-5 py-1 px-3 text-white">
+                        class="bg__button--lightblue rounded-5 py-1 px-3 text-white"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-blank">
                         Create Ticket
                       </button>
-                      <div class="filters">
+
+                      <div class="">
                         <button
-                          class="filters__trigger text-secondary d-inline-flex align-items-center">
+                          class="btn btn-link text-decoration-none text-dark"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modal-blank">
                           <svg
                             class="me-2"
                             aria-hidden="true"
@@ -729,6 +804,7 @@
                         </button>
                       </div>
                     </div>
+
                     <ul class="mt-5">
                       <li class="ticket bg-white rounded-5 p-4 mb-4">
                         <p class="text--lightblue fs-14 fw-bold">
@@ -756,5 +832,50 @@
         </div>
       </main>
     </div>
+
+    <!-- START # Blank Modal # START -->
+    <div class="modal" id="modal-blank">
+      <div class="modal-dialog">
+        <div class="modal-content p-4">
+          <div class="modal-header">
+            <p class="fw-bold">Hello, modal!</p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <p class="lh-base">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                  voluptates sit reprehenderit a numquam corrupti qui, ullam est
+                  et praesentium impedit minima eveniet magni provident fugit
+                  esse doloribus voluptate inventore.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-4 fw-bold border-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  style="background-color: #3f356b">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END # Blank Modal # END -->
   </body>
 </html>
